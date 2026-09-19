@@ -51,51 +51,9 @@ export default function Home() {
 </div>
 </div>
 </div>
-{/* Grounded Glassmorphic Metrics Ribbon */}
-<div className="relative z-10 w-full bg-[#0d1f1c]/90 border-t border-white/10 backdrop-blur-2xl py-6">
-<div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
-<div className="grid grid-cols-2 lg:grid-cols-4 gap-6 items-center">
-<div className="flex items-center gap-3.5">
-<div className="w-12 h-12 rounded-xl bg-primary-container/40 border border-primary/40 flex items-center justify-center shrink-0 text-primary-fixed">
-<span className="material-symbols-outlined text-[24px]">history_edu</span>
-</div>
-<div>
-<div className="font-metric-number text-metric-number text-white leading-tight">10+</div>
-<div className="font-body-sm text-body-sm text-outline-variant">Years Engineering Rigour</div>
-</div>
-</div>
-<div className="flex items-center gap-3.5">
-<div className="w-12 h-12 rounded-xl bg-secondary-container/20 border border-secondary-container/30 flex items-center justify-center shrink-0 text-secondary-fixed">
-<span className="material-symbols-outlined text-[24px]">apartment</span>
-</div>
-<div>
-<div className="font-metric-number text-metric-number text-white leading-tight">250+</div>
-<div className="font-body-sm text-body-sm text-outline-variant">Projects Delivered On-Time</div>
-</div>
-</div>
-<div className="flex items-center gap-3.5">
-<div className="w-12 h-12 rounded-xl bg-primary-container/40 border border-primary/40 flex items-center justify-center shrink-0 text-primary-fixed">
-<span className="material-symbols-outlined text-[24px]">landscape</span>
-</div>
-<div>
-<div className="font-metric-number text-metric-number text-white leading-tight">Dual</div>
-<div className="font-body-sm text-body-sm text-outline-variant">Plains &amp; Hills Specialists</div>
-</div>
-</div>
-<div className="flex items-center gap-3.5">
-<div className="w-12 h-12 rounded-xl bg-secondary-container/20 border border-secondary-container/30 flex items-center justify-center shrink-0 text-secondary-fixed">
-<span className="material-symbols-outlined text-[24px]">verified</span>
-</div>
-<div>
-<div className="font-metric-number text-metric-number text-white leading-tight">Zone IV/V</div>
-<div className="font-body-sm text-body-sm text-outline-variant">100% Seismic-Tested</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+
 </section>
-      <section className="w-full py-16 lg:py-20 bg-[#0b1a18] text-white relative overflow-hidden" id="statistics">
+      <section className="w-full py-8 lg:py-10 bg-[#0b1a18] text-white relative overflow-hidden" id="statistics">
   <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03] mix-blend-overlay pointer-events-none"></div>
   
   <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -103,28 +61,28 @@ export default function Home() {
       
       {/* Stat 1 */}
       <div className="flex flex-col items-center text-center pt-6 sm:pt-0 sm:px-6 lg:px-8">
-        <span className="font-headline-xl text-[56px] lg:text-[72px] font-bold text-[#fea12b] mb-3 leading-none tracking-tight">25+</span>
+        <span className="font-headline-xl text-[40px] lg:text-[52px] font-bold text-[#fea12b] mb-1 leading-none tracking-tight">25+</span>
         <h3 className="font-headline-sm text-[18px] lg:text-[20px] font-bold text-white mb-2">Projects Completed</h3>
         <p className="font-body-sm text-[14px] text-white/60 leading-snug">Residential, turnkey & renovation</p>
       </div>
 
       {/* Stat 2 */}
       <div className="flex flex-col items-center text-center pt-6 sm:pt-0 sm:px-6 lg:px-8">
-        <span className="font-headline-xl text-[56px] lg:text-[72px] font-bold text-[#fea12b] mb-3 leading-none tracking-tight">5</span>
+        <span className="font-headline-xl text-[40px] lg:text-[52px] font-bold text-[#fea12b] mb-1 leading-none tracking-tight">5</span>
         <h3 className="font-headline-sm text-[18px] lg:text-[20px] font-bold text-white mb-2">Ongoing Projects</h3>
         <p className="font-body-sm text-[14px] text-white/60 leading-snug">Currently under execution</p>
       </div>
 
       {/* Stat 3 */}
       <div className="flex flex-col items-center text-center pt-6 sm:pt-0 sm:px-6 lg:px-8">
-        <span className="font-headline-xl text-[56px] lg:text-[72px] font-bold text-[#fea12b] mb-3 leading-none tracking-tight">50+</span>
+        <span className="font-headline-xl text-[40px] lg:text-[52px] font-bold text-[#fea12b] mb-1 leading-none tracking-tight">50+</span>
         <h3 className="font-headline-sm text-[18px] lg:text-[20px] font-bold text-white mb-2">Happy Clients</h3>
         <p className="font-body-sm text-[14px] text-white/60 leading-snug">Families across North Bengal</p>
       </div>
 
       {/* Stat 4 */}
       <div className="flex flex-col items-center text-center pt-6 sm:pt-0 sm:px-6 lg:px-8">
-        <span className="font-headline-xl text-[56px] lg:text-[72px] font-bold text-[#fea12b] mb-3 leading-none tracking-tight">2018</span>
+        <span className="font-headline-xl text-[40px] lg:text-[52px] font-bold text-[#fea12b] mb-1 leading-none tracking-tight">2018</span>
         <h3 className="font-headline-sm text-[18px] lg:text-[20px] font-bold text-white mb-2">Established</h3>
         <p className="font-body-sm text-[14px] text-white/60 leading-snug">Engineering-led construction company</p>
       </div>
