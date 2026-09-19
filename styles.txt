@@ -1,0 +1,73 @@
+style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-LzUYpcXMh5Chx6UeRfOcGJwtKKLsKd3cjlEoG5llfhdnclVxB7r_VCrTgAC9RAuTnK1hYoXU6Tn8qfYRnQN4cK3TBsTUMoHu5wc3FYU9WRSlYAP3-HuWRPLGJnkP0LGM2xc2MD42l438v9PwNDY3HiS5VjLkQIQo4VSBecQRhJSePLbUn1tz3iXQys3vErCqkTQE_n-rZ68wJ8q6GHcMRMpUbAbYK4-0OSwq04ktt9E2M1wrWDIv')" }
+style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBUBieGDC6WrWJTpsifRi4s8h_olh7kh7b2pjhYgIO_RjmdsELp82zLY55rXVoU4TrXwkKDby9TzVzSvUiOBtnTa7PTXaq03UxUCOZYOjUX26C8Jthi3pUXKOsg98MCvHRLHwj9qBP3rJANmP5LSYWupz31oLkmbbNLz22f_E9btsHwU6BI1q_lQbc4ZB1RtZamV-9cWmFvwDyO3C5mDdSAesLHjT_JJhvmEHLiU5xtSpGvS3lXntUf')" }
+style="font-variation-settings: 'FILL' 1;">star</span>
+<span className="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span className="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span className="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span className="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p className="font-subheading-editorial text-subheading-editorial italic text-on-surface leading-relaxed mb-6">
+                  “High Grade turned our dream hillside villa into reality on a steep 40-degree slope in Darjeeling with zero hassle. Their retaining wall engineering is immaculate.”
+                </p>
+</div>
+<div className="flex items-center gap-3.5 pt-4 border-t border-outline-variant/20">
+<div className="w-12 h-12 rounded-full overflow-hidden bg-surface-container-high shrink-0">
+<img alt="Mr. Rohan Mehta" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1dtw3ub-Fim1cw5sqsSBPpS1Pr_ZRnvzxzVRIiW3qwljEjieh5fUCjwCLjj5SfR8yvbx5UIsnxUg7l1UUt469yvdqtzZRfXa3jd7CvcS8gAmnMNJ5jAvOIkOBKMOvG1Jt57LyeGiG7Gpv3vhCnRmtt0swygnd_o1mR_F_p8WK_cru4nsZiukLihUkzxF9LL9FxK7OvIgEgRushzVynCFFEUfYaoGYQVcPtDCN1TDrWfXxhXMCwa7X"/>
+</div>
+<div>
+<div className="font-headline-sm text-headline-sm text-primary font-bold leading-tight">Mr. Rohan Mehta</div>
+<div className="font-body-sm text-body-sm text-on-surface-variant">Hillside Villa Owner • Darjeeling</div>
+</div>
+</div>
+</div>
+<div className="p-7 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm flex flex-col justify-between">
+<div>
+<div className="flex text-secondary-container gap-1 mb-5">
+<span className="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span className="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span className="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span className="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span className="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p className="font-subheading-editorial text-subheading-editorial italic text-on-surface leading-relaxed mb-6">
+                  “Delivered our 5-storey medical and commercial complex in Siliguri two weeks ahead of schedule. The BOQ was adhered to down to the single rupee. True professionals.”
+                </p>
+</div>
+<div className="flex items-center gap-3.5 pt-4 border-t border-outline-variant/20">
+<div className="w-12 h-12 rounded-full overflow-hidden bg-surface-container-high shrink-0">
+<img alt="Dr. Anirban Roy" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjM4md6desRKqq5qZqInGbxye4_2PXSowxp0rsjWrWp-dpPbfjVaqofjpoDucnTwPxBzCeCbSBtmLBiuh7liQgjZsSFe_WFJpwbC6FvToAaGOXhpC8D5Kvn2OZAc7z-FptHaZGwzC0UdLByV0pJ0wviucXip3ZVeeFvyY6arzufQH3BlD_s5HSHSrpVoiyf62g_uW7kFeNnOzjBz8RNYnSslWPl1EAYwqw_O13n6YLi7CpyIljpx5v"/>
+</div>
+<div>
+<div className="font-headline-sm text-headline-sm text-primary font-bold leading-tight">Dr. Anirban Roy</div>
+<div className="font-body-sm text-body-sm text-on-surface-variant">Commercial Developer • Sevoke Rd, Siliguri</div>
+</div>
+</div>
+</div>
+<div className="p-7 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm flex flex-col justify-between">
+<div>
+<div className="flex text-secondary-container gap-1 mb-5">
+<span className="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span className="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span className="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span className="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span className="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p className="font-subheading-editorial text-subheading-editorial italic text-on-surface leading-relaxed mb-6">
+                  “Living in Kolkata while building our family home in Kalimpong seemed daunting. The daily video updates and total billing honesty gave us total peace of mind.”
+                </p>
+</div>
+<div className="flex items-center gap-3.5 pt-4 border-t border-outline-variant/20">
+<div className="w-12 h-12 rounded-full overflow-hidden bg-surface-container-high shrink-0">
+<img alt="Mrs. Tashi Wangdi" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHxFO7IiFyS0cP08Fbu0Kwb3P_ko3gXVpogAk6MfJgiYJixLj5RBq4qAd4XfWhKdOEwJv65XvVr8mYtU68huNeJ2Jcbg0uUql59ki6y2ZvUeVIKEfmXLrgpV-OgCBmtp7F4UM4FC5d2waCrCLiO-7UiagNkglegG7RyMThqAwEqrsqdLwSsNhnkbLGAdjxlXLOGMEr29-3qC3g9pA2Lr-dhoS0kle3kYFwSs91yni5ZD-dAaBf7WPx"/>
+</div>
+<div>
+<div className="font-headline-sm text-headline-sm text-primary font-bold leading-tight">Mrs. Tashi Wangdi</div>
+<div className="font-body-sm text-body-sm text-on-surface-variant">Boutique Residence • Kalimpong</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+{/* ================================================================= */}
+style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCNxiTY_nPwBCxDNvWbPmZaeEAEAJP3S6ljdEgK-u7Y7hZDDKZ-Dr82X0iZElQ1ahIZEVrVFz3s6wlxooqWz_qmTgTFbRiifW_NaQ_heRwDLyT_SMNtfxFy6d2YBnxw7RZAWREkLmspBSO6KoZ9USwqiE00_WznmXn05_ZWBeyt6__B_jzbaDaMaEZTFYxW4kPio_y2fRwxM0dQT8wlZe7Q87tXlZV7OA_DLfaK80vanDJCQknKMjng')" }
