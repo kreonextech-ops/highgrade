@@ -283,153 +283,282 @@ export default function Home() {
     </div>
   </div>
 </section>
-      <section className="w-full py-20 lg:py-28 bg-surface text-on-surface" id="services">
-<div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
-<div className="text-center max-w-2xl mx-auto mb-16">
-<span className="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-widest block mb-2">Our Core Services</span>
-<h2 className="font-headline-xl text-headline-xl text-primary font-bold mb-3">
-  Complete Construction Solutions Under One Roof
-</h2>
-<p className="font-body-md text-body-md text-on-surface-variant">
-  From soil testing to final key handover, our integrated engineering team eliminates subcontractor friction and assures unified quality.
-</p>
-</div>
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
+<section className="w-full py-16 lg:py-24 bg-[#fbfbfa] text-on-surface relative overflow-hidden" id="services">
+  {/* Abstract Mountain/Drawing Background Placeholder */}
+  <div className="absolute top-0 left-0 w-full h-[500px] opacity-40 pointer-events-none">
+     <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1542224566-6e85f2e6772f?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-30 grayscale mix-blend-multiply"></div>
+     <div className="absolute inset-0 bg-gradient-to-b from-[#fbfbfa]/40 via-[#fbfbfa]/80 to-[#fbfbfa]"></div>
+  </div>
 
-<div className="group p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-<div>
-<div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300 mb-4">
-<span className="material-symbols-outlined text-[24px]">handshake</span>
-</div>
-<span className="font-label-caps text-label-caps uppercase text-secondary font-bold">01</span>
-<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 mb-2">Turnkey Construction</h3>
-<p className="font-body-sm text-body-sm text-on-surface-variant leading-snug">
-  Complete end-to-end residential construction.
-</p>
-</div>
-</div>
-<div className="group p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-<div>
-<div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300 mb-4">
-<span className="material-symbols-outlined text-[24px]">home</span>
-</div>
-<span className="font-label-caps text-label-caps uppercase text-secondary font-bold">02</span>
-<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 mb-2">Residential Homes</h3>
-<p className="font-body-sm text-body-sm text-on-surface-variant leading-snug">
-  Modern villas and family homes.
-</p>
-</div>
-</div>
-<div className="group p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-<div>
-<div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300 mb-4">
-<span className="material-symbols-outlined text-[24px]">terrain</span>
-</div>
-<span className="font-label-caps text-label-caps uppercase text-secondary font-bold">03</span>
-<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 mb-2">Hill Architecture</h3>
-<p className="font-body-sm text-body-sm text-on-surface-variant leading-snug">
-  Engineered for slopes and mountain terrain.
-</p>
-</div>
-</div>
-<div className="group p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-<div>
-<div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300 mb-4">
-<span className="material-symbols-outlined text-[24px]">architecture</span>
-</div>
-<span className="font-label-caps text-label-caps uppercase text-secondary font-bold">04</span>
-<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 mb-2">Architectural Planning</h3>
-<p className="font-body-sm text-body-sm text-on-surface-variant leading-snug">
-  Functional and aesthetic space planning.
-</p>
-</div>
-</div>
-<div className="group p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-<div>
-<div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300 mb-4">
-<span className="material-symbols-outlined text-[24px]">draw</span>
-</div>
-<span className="font-label-caps text-label-caps uppercase text-secondary font-bold">05</span>
-<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 mb-2">2D Floor Plans</h3>
-<p className="font-body-sm text-body-sm text-on-surface-variant leading-snug">
-  Accurate technical planning drawings.
-</p>
-</div>
-</div>
-<div className="group p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-<div>
-<div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300 mb-4">
-<span className="material-symbols-outlined text-[24px]">view_in_ar</span>
-</div>
-<span className="font-label-caps text-label-caps uppercase text-secondary font-bold">06</span>
-<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 mb-2">3D Elevation Design</h3>
-<p className="font-body-sm text-body-sm text-on-surface-variant leading-snug">
-  Premium exterior visualization.
-</p>
-</div>
-</div>
-<div className="group p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-<div>
-<div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300 mb-4">
-<span className="material-symbols-outlined text-[24px]">foundation</span>
-</div>
-<span className="font-label-caps text-label-caps uppercase text-secondary font-bold">07</span>
-<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 mb-2">Structural Design</h3>
-<p className="font-body-sm text-body-sm text-on-surface-variant leading-snug">
-  Safe RCC and steel structural solutions.
-</p>
-</div>
-</div>
-<div className="group p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-<div>
-<div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300 mb-4">
-<span className="material-symbols-outlined text-[24px]">living</span>
-</div>
-<span className="font-label-caps text-label-caps uppercase text-secondary font-bold">08</span>
-<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 mb-2">Interior Design</h3>
-<p className="font-body-sm text-body-sm text-on-surface-variant leading-snug">
-  Elegant interior execution.
-</p>
-</div>
-</div>
-<div className="group p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-<div>
-<div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300 mb-4">
-<span className="material-symbols-outlined text-[24px]">handyman</span>
-</div>
-<span className="font-label-caps text-label-caps uppercase text-secondary font-bold">09</span>
-<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 mb-2">Renovation & Remodeling</h3>
-<p className="font-body-sm text-body-sm text-on-surface-variant leading-snug">
-  Upgrade existing homes beautifully.
-</p>
-</div>
-</div>
-<div className="group p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-<div>
-<div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300 mb-4">
-<span className="material-symbols-outlined text-[24px]">assignment</span>
-</div>
-<span className="font-label-caps text-label-caps uppercase text-secondary font-bold">10</span>
-<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 mb-2">Project Management</h3>
-<p className="font-body-sm text-body-sm text-on-surface-variant leading-snug">
-  Quality, timeline, and budget supervision.
-</p>
-</div>
-</div>
-<div className="group p-5 rounded-2xl bg-surface-container-lowest border border-outline-variant/30 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-<div>
-<div className="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300 mb-4">
-<span className="material-symbols-outlined text-[24px]">park</span>
-</div>
-<span className="font-label-caps text-label-caps uppercase text-secondary font-bold">11</span>
-<h3 className="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 mb-2">Landscape Development</h3>
-<p className="font-body-sm text-body-sm text-on-surface-variant leading-snug">
-  Outdoor living and site aesthetics.
-</p>
-</div>
-</div>
-</div>
-</div>
+  <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    
+    {/* Header Section */}
+    <div className="mb-14">
+      <div className="flex items-center gap-4 mb-6">
+        <span className="font-label-caps text-[12px] uppercase text-[#a06834] font-bold tracking-widest">Our Core Services</span>
+        <div className="w-16 h-[2px] bg-[#d5a05b]"></div>
+      </div>
+      <h2 className="font-headline-xl text-[40px] lg:text-[56px] text-primary font-bold mb-4 leading-[1.1]">
+        Complete Construction <br className="hidden sm:block"/><span className="text-[#a06834]">Solutions Under One Roof</span>
+      </h2>
+      <p className="text-[15px] lg:text-[16px] text-on-surface-variant max-w-3xl leading-relaxed mb-10">
+        From concept to completion, High Grade delivers end-to-end construction solutions with engineering expertise, modern design, and uncompromising quality.
+      </p>
+
+      {/* 4 Trust Badges */}
+      <div className="flex flex-wrap items-center gap-6 lg:gap-12">
+        <div className="flex items-center gap-3">
+          <span className="material-symbols-outlined text-[#a06834] text-[28px]">groups</span>
+          <div className="flex flex-col">
+             <span className="font-bold text-primary text-[13px]">One Team</span>
+             <span className="text-[11px] text-on-surface-variant font-medium">Design to Delivery</span>
+          </div>
+        </div>
+        <div className="hidden sm:block w-[1px] h-8 bg-black/10"></div>
+        <div className="flex items-center gap-3">
+          <span className="material-symbols-outlined text-[#a06834] text-[28px]">settings</span>
+          <div className="flex flex-col">
+             <span className="font-bold text-primary text-[13px]">End-to-End Support</span>
+             <span className="text-[11px] text-on-surface-variant font-medium">Hassle-Free Execution</span>
+          </div>
+        </div>
+        <div className="hidden sm:block w-[1px] h-8 bg-black/10"></div>
+        <div className="flex items-center gap-3">
+          <span className="material-symbols-outlined text-[#a06834] text-[28px]">verified_user</span>
+          <div className="flex flex-col">
+             <span className="font-bold text-primary text-[13px]">Quality Assurance</span>
+             <span className="text-[11px] text-on-surface-variant font-medium">Built to Last</span>
+          </div>
+        </div>
+        <div className="hidden sm:block w-[1px] h-8 bg-black/10"></div>
+        <div className="flex items-center gap-3">
+          <span className="material-symbols-outlined text-[#a06834] text-[28px]">landscape</span>
+          <div className="flex flex-col">
+             <span className="font-bold text-primary text-[13px]">Built for North Bengal</span>
+             <span className="text-[11px] text-on-surface-variant font-medium">Plains & Hills Expertise</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Bento Box Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-12 gap-5">
+       
+      {/* 01 Turnkey Construction */}
+      <div className="group relative rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-[260px] bg-[#0c2a25] col-span-12 md:col-span-5">
+        <div className="absolute inset-y-0 right-0 w-[70%]">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0c2a25] via-[#0c2a25]/90 to-transparent z-10" />
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800&auto=format&fit=crop" alt="Turnkey Construction" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        </div>
+        <div className="relative z-20 h-full p-7 lg:p-8 flex flex-col items-start w-[85%] sm:w-[75%] text-white">
+          <div className="flex items-center gap-3 mb-4">
+             <span className="text-[#d5a05b] font-bold text-sm">01</span>
+             <span className="material-symbols-outlined text-white">home</span>
+          </div>
+          <h3 className="text-[22px] lg:text-[26px] font-bold text-white leading-[1.1] mb-2">Turnkey<br/>Construction</h3>
+          <p className="text-[13px] text-white/70 leading-relaxed mb-auto">Complete end-to-end residential and commercial construction solutions.</p>
+          <a href="/projects" className="w-8 h-8 rounded-full border border-white/50 text-white flex items-center justify-center hover:bg-white hover:text-[#0c2a25] transition-colors mt-4">
+            <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      {/* 02 Residential Homes */}
+      <div className="group relative rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-[260px] bg-[#fbfbfa] border border-black/5 col-span-12 md:col-span-4">
+        <div className="absolute inset-y-0 right-0 w-[70%]">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#fbfbfa] via-[#fbfbfa]/90 to-transparent z-10" />
+          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09c15468?q=80&w=800&auto=format&fit=crop" alt="Residential Homes" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        </div>
+        <div className="relative z-20 h-full p-7 lg:p-8 flex flex-col items-start w-[85%] sm:w-[75%]">
+          <div className="flex items-center gap-3 mb-4">
+             <span className="text-[#a06834] font-bold text-sm">02</span>
+             <span className="material-symbols-outlined text-primary">cottage</span>
+          </div>
+          <h3 className="text-[22px] lg:text-[24px] font-bold text-primary leading-[1.1] mb-2">Residential<br/>Homes</h3>
+          <p className="text-[13px] text-on-surface-variant leading-relaxed mb-auto">Modern villas, independent houses and family homes built for lasting generations.</p>
+          <a href="/projects" className="w-8 h-8 rounded-full border border-primary/30 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors mt-4">
+            <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      {/* 03 Hill Architecture */}
+      <div className="group relative rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-[260px] bg-[#0c2a25] col-span-12 md:col-span-3">
+        <div className="absolute inset-y-0 right-0 w-[80%]">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0c2a25] via-[#0c2a25]/90 to-transparent z-10" />
+          <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=800&auto=format&fit=crop" alt="Hill Architecture" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        </div>
+        <div className="relative z-20 h-full p-7 lg:p-8 flex flex-col items-start w-[100%] sm:w-[85%] text-white">
+          <div className="flex items-center gap-3 mb-4">
+             <span className="text-[#d5a05b] font-bold text-sm">03</span>
+             <span className="material-symbols-outlined text-white">landscape</span>
+          </div>
+          <h3 className="text-[22px] lg:text-[24px] font-bold text-white leading-[1.1] mb-2">Hill<br/>Architecture</h3>
+          <p className="text-[13px] text-white/70 leading-relaxed mb-auto">Engineered for slopes and mountain terrain with specialized techniques.</p>
+          <a href="/projects" className="w-8 h-8 rounded-full border border-white/50 text-white flex items-center justify-center hover:bg-white hover:text-[#0c2a25] transition-colors mt-4">
+            <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      {/* 04 Architectural Planning */}
+      <div className="group relative rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-[240px] bg-[#fbfbfa] border border-black/5 col-span-12 md:col-span-4">
+        <div className="absolute inset-y-0 right-0 w-[60%]">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#fbfbfa] via-[#fbfbfa]/90 to-transparent z-10" />
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop" alt="Architectural Planning" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        </div>
+        <div className="relative z-20 h-full p-7 flex flex-col items-start w-[85%] sm:w-[75%]">
+          <div className="flex items-center gap-3 mb-3">
+             <span className="text-[#a06834] font-bold text-sm">04</span>
+             <span className="material-symbols-outlined text-primary">architecture</span>
+          </div>
+          <h3 className="text-[20px] font-bold text-primary leading-[1.1] mb-2">Architectural<br/>Planning</h3>
+          <p className="text-[13px] text-on-surface-variant leading-relaxed mb-auto">Functional, aesthetic and site-specific space planning.</p>
+          <a href="/projects" className="w-8 h-8 rounded-full border border-primary/30 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors mt-3">
+            <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      {/* 05 2D Floor Plans */}
+      <div className="group relative rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-[240px] bg-[#fbfbfa] border border-black/5 col-span-12 md:col-span-4">
+        <div className="absolute inset-y-0 right-0 w-[60%]">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#fbfbfa] via-[#fbfbfa]/90 to-transparent z-10" />
+          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=800&auto=format&fit=crop" alt="2D Floor Plans" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        </div>
+        <div className="relative z-20 h-full p-7 flex flex-col items-start w-[85%] sm:w-[75%]">
+          <div className="flex items-center gap-3 mb-3">
+             <span className="text-[#a06834] font-bold text-sm">05</span>
+             <span className="material-symbols-outlined text-primary">draw</span>
+          </div>
+          <h3 className="text-[20px] font-bold text-primary leading-[1.1] mb-2">2D Floor<br/>Plans</h3>
+          <p className="text-[13px] text-on-surface-variant leading-relaxed mb-auto">Accurate technical planning drawings for approvals and execution.</p>
+          <a href="/projects" className="w-8 h-8 rounded-full border border-primary/30 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors mt-3">
+            <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      {/* 06 3D Elevation Design */}
+      <div className="group relative rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-[240px] bg-[#fbfbfa] border border-black/5 col-span-12 md:col-span-4">
+        <div className="absolute inset-y-0 right-0 w-[60%]">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#fbfbfa] via-[#fbfbfa]/90 to-transparent z-10" />
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" alt="3D Elevation Design" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        </div>
+        <div className="relative z-20 h-full p-7 flex flex-col items-start w-[85%] sm:w-[75%]">
+          <div className="flex items-center gap-3 mb-3">
+             <span className="text-[#a06834] font-bold text-sm">06</span>
+             <span className="material-symbols-outlined text-primary">view_in_ar</span>
+          </div>
+          <h3 className="text-[20px] font-bold text-primary leading-[1.1] mb-2">3D Elevation<br/>Design</h3>
+          <p className="text-[13px] text-on-surface-variant leading-relaxed mb-auto">Realistic exterior visualization to help you see your dream before construction.</p>
+          <a href="/projects" className="w-8 h-8 rounded-full border border-primary/30 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors mt-3">
+            <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      {/* 07 Structural Design */}
+      <div className="group relative rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-[220px] bg-[#fbfbfa] border border-black/5 col-span-12 md:col-span-3">
+        <div className="absolute inset-y-0 right-0 w-[55%]">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#fbfbfa] via-[#fbfbfa]/90 to-transparent z-10" />
+          <img src="https://images.unsplash.com/photo-1541888081622-15cb2a0614ce?q=80&w=600&auto=format&fit=crop" alt="Structural Design" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        </div>
+        <div className="relative z-20 h-full p-6 flex flex-col items-start w-[90%] sm:w-[80%]">
+          <div className="flex items-center gap-2 mb-3">
+             <span className="text-[#a06834] font-bold text-xs">07</span>
+             <span className="material-symbols-outlined text-primary text-[18px]">foundation</span>
+          </div>
+          <h3 className="text-[16px] font-bold text-primary leading-[1.1] mb-2">Structural<br/>Design</h3>
+          <p className="text-[12px] text-on-surface-variant leading-relaxed mb-auto">Safe RCC and steel structural solutions with precision.</p>
+          <a href="/projects" className="w-7 h-7 rounded-full border border-primary/30 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors mt-2">
+            <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      {/* 08 Interior Design */}
+      <div className="group relative rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-[220px] bg-[#fbfbfa] border border-black/5 col-span-12 md:col-span-3">
+        <div className="absolute inset-y-0 right-0 w-[55%]">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#fbfbfa] via-[#fbfbfa]/90 to-transparent z-10" />
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=600&auto=format&fit=crop" alt="Interior Design" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        </div>
+        <div className="relative z-20 h-full p-6 flex flex-col items-start w-[90%] sm:w-[80%]">
+          <div className="flex items-center gap-2 mb-3">
+             <span className="text-[#a06834] font-bold text-xs">08</span>
+             <span className="material-symbols-outlined text-primary text-[18px]">chair</span>
+          </div>
+          <h3 className="text-[16px] font-bold text-primary leading-[1.1] mb-2">Interior<br/>Design</h3>
+          <p className="text-[12px] text-on-surface-variant leading-relaxed mb-auto">Elegant and practical interiors that match your lifestyle.</p>
+          <a href="/projects" className="w-7 h-7 rounded-full border border-primary/30 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors mt-2">
+            <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      {/* 09 Renovation */}
+      <div className="group relative rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-[220px] bg-[#fbfbfa] border border-black/5 col-span-12 md:col-span-3">
+        <div className="absolute inset-y-0 right-0 w-[55%]">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#fbfbfa] via-[#fbfbfa]/90 to-transparent z-10" />
+          <img src="https://images.unsplash.com/photo-1581141849291-1125c7b692b5?q=80&w=600&auto=format&fit=crop" alt="Renovation" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        </div>
+        <div className="relative z-20 h-full p-6 flex flex-col items-start w-[90%] sm:w-[80%]">
+          <div className="flex items-center gap-2 mb-3">
+             <span className="text-[#a06834] font-bold text-xs">09</span>
+             <span className="material-symbols-outlined text-primary text-[18px]">handyman</span>
+          </div>
+          <h3 className="text-[16px] font-bold text-primary leading-[1.1] mb-2">Renovation &<br/>Remodeling</h3>
+          <p className="text-[12px] text-on-surface-variant leading-relaxed mb-auto">Upgrade and transform existing spaces beautifully and efficiently.</p>
+          <a href="/projects" className="w-7 h-7 rounded-full border border-primary/30 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors mt-2">
+            <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      {/* 10 Project Management */}
+      <div className="group relative rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-[220px] bg-[#fbfbfa] border border-black/5 col-span-12 md:col-span-3">
+        <div className="absolute inset-y-0 right-0 w-[55%]">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#fbfbfa] via-[#fbfbfa]/90 to-transparent z-10" />
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356fce?q=80&w=600&auto=format&fit=crop" alt="Project Management" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        </div>
+        <div className="relative z-20 h-full p-6 flex flex-col items-start w-[90%] sm:w-[80%]">
+          <div className="flex items-center gap-2 mb-3">
+             <span className="text-[#a06834] font-bold text-xs">10</span>
+             <span className="material-symbols-outlined text-primary text-[18px]">assignment</span>
+          </div>
+          <h3 className="text-[16px] font-bold text-primary leading-[1.1] mb-2">Project<br/>Management</h3>
+          <p className="text-[12px] text-on-surface-variant leading-relaxed mb-auto">Quality control, timeline management and budget supervision.</p>
+          <a href="/projects" className="w-7 h-7 rounded-full border border-primary/30 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors mt-2">
+            <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      {/* 11 Landscape Development */}
+      <div className="group relative rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-[140px] sm:h-[120px] bg-[#0c2a25] col-span-12 flex items-center">
+        <div className="absolute inset-y-0 right-0 w-[60%] sm:w-[70%] lg:w-[80%]">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0c2a25] via-[#0c2a25]/60 to-transparent z-10" />
+          <img src="https://images.unsplash.com/photo-1558904541-efa843a96f09?q=80&w=1200&auto=format&fit=crop" alt="Landscape Development" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+        </div>
+        <div className="relative z-20 p-6 lg:p-8 flex items-center justify-between w-full text-white">
+          <div className="flex items-center gap-6">
+            <div className="flex flex-col items-center justify-center">
+               <span className="text-[#d5a05b] font-bold text-sm mb-1">11</span>
+               <span className="material-symbols-outlined text-white">park</span>
+            </div>
+            <div>
+               <h3 className="text-[18px] lg:text-[20px] font-bold text-white mb-1">Landscape Development</h3>
+               <p className="text-[12px] lg:text-[13px] text-white/70">Outdoor living spaces, gardens and site aesthetics.</p>
+            </div>
+          </div>
+          <a href="/projects" className="w-10 h-10 rounded-full border border-white/50 text-white flex items-center justify-center hover:bg-white hover:text-[#0c2a25] transition-colors shrink-0">
+            <span className="material-symbols-outlined text-[20px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
       <section className="w-full py-20 lg:py-28 bg-surface text-on-surface" id="usp">
 <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
