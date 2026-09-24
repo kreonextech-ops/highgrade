@@ -9,8 +9,8 @@ export default function Home() {
 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')" }}></div>
 </div>
 {/* Hero Content Vessel */}
-<div className="relative z-10 max-w-[1360px] w-full mx-auto px-4 sm:px-6 lg:px-8 flex-1 flex flex-col justify-between pt-0 pb-6 lg:pb-10">
-<div className="max-w-3xl flex flex-col items-start pt-2 lg:pt-4">
+<div className="relative z-10 max-w-[1360px] w-full mx-auto px-4 sm:px-6 lg:px-8 flex-1 flex flex-col justify-between pt-8 lg:pt-16 pb-6 lg:pb-10">
+<div className="max-w-3xl flex flex-col items-start">
 {/* Category Tag Pill */}
 <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-black/40 border border-white/20 backdrop-blur-md mb-6 shadow-lg">
 <span className="w-2 h-2 rounded-full bg-[#fea12b] animate-pulse"></span>
