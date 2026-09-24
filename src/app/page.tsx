@@ -9,8 +9,8 @@ export default function Home() {
 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')" }}></div>
 </div>
 {/* Hero Content Vessel */}
-<div className="relative z-10 max-w-[1360px] w-full mx-auto px-4 sm:px-6 lg:px-8 flex-1 flex flex-col justify-center py-12 lg:py-16">
-<div className="max-w-3xl flex flex-col items-start">
+<div className="relative z-10 max-w-[1360px] w-full mx-auto px-4 sm:px-6 lg:px-8 flex-1 flex flex-col justify-between py-12 lg:py-16">
+<div className="max-w-3xl flex flex-col items-start pt-4 lg:pt-12">
 {/* Category Tag Pill */}
 <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 backdrop-blur-md mb-6 shadow-sm">
 <span className="w-2 h-2 rounded-full bg-[#fea12b] animate-pulse"></span>
@@ -25,8 +25,11 @@ export default function Home() {
                 Creating Trust.
               </span>
 </h1>
+</div>
+
+<div className="flex flex-col items-start mt-auto pb-4 lg:pb-8">
 {/* Dual CTAs */}
-<div className="flex flex-wrap items-center gap-4 mb-8">
+<div className="flex flex-wrap items-center gap-4 mb-6">
 <a className="relative overflow-hidden shimmer-badge inline-flex items-center gap-3 bg-[#F59A23] hover:bg-[#ffaa3b] text-on-secondary-fixed font-label-md text-label-md px-6 sm:px-7 py-4 rounded-xl font-bold shadow-[0_12px_28px_rgba(245,154,35,0.35)] hover:-translate-y-0.5 transition-all duration-300 group" href="/contact">
 <span>Schedule Consultation</span>
 <span className="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-1">arrow_forward</span>
@@ -37,9 +40,9 @@ export default function Home() {
 </a>
 </div>
 {/* Direct Geographic Operating Strip */}
-<div className="flex items-center gap-2 text-outline-variant font-body-sm text-body-sm">
-<span className="material-symbols-outlined text-[18px] text-secondary-container">location_on</span>
-<span>Active Construction Across Siliguri, Darjeeling, Kurseong &amp; Kalimpong Foothills</span>
+<div className="flex items-center gap-2 text-white/80 font-body-sm text-body-sm bg-black/20 px-4 py-2 rounded-lg backdrop-blur-sm">
+<span className="material-symbols-outlined text-[18px] text-[#fea12b]">location_on</span>
+<span>Active Construction Across Siliguri, Darjeeling, Kurseong, Kalimpong &amp; Sikkim Foothills</span>
 </div>
 </div>
 </div>
