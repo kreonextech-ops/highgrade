@@ -154,40 +154,11 @@ export default function Home() {
   Our Story <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
 </a>
 </div>
-{/* Right Visual Composition: Blueprint to Reality Layer */}
+{/* Right Visual Composition: Image Layer */}
 <div className="lg:col-span-6 relative h-full flex flex-col justify-center">
-  <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-[#23423d] pt-3 px-3 pb-5">
+  <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-[#23423d] p-3">
     <div className="relative rounded-xl overflow-hidden">
-      <img alt="Comprehensive Architectural Services Blueprint to Finished Villa" className="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDZeeGM0RTyIkzufqBPqvLDV3kPwroTGZ4Wb5cN8Kwh0_zJwg5cf2SBBQUZLiHY2d6jwE9hlMhQC3V0bVTzZbVN8kucGNzUdZLK8Xa6hQ8EUbCa1RISNRHkVd9Ug0-XS9W0QUEehvQQazp87iYGDvSi6sL5T4uYwG2AJ5a2prdLMwSJ22MbtusCZJbzVvlAXTDelxdWItXK94evf_jkFGQiV8h9TpHHcMv5pBuKFKDU08m95WIF1a_F-lsghw30klrbg"/>
-      
-      {/* Floating Technical Badge: Zero Tolerance */}
-      <div className="absolute top-4 left-4 bg-[#23423d] text-white px-4 py-2.5 rounded-xl shadow-lg flex items-center gap-3">
-        <span className="material-symbols-outlined text-[#fea12b] text-[22px]">straighten</span>
-        <div className="flex flex-col">
-          <span className="font-bold text-[11px] uppercase tracking-wide">Zero Tolerance</span>
-          <span className="text-[11px] text-white/80">IS Code & BTS Certified</span>
-        </div>
-      </div>
-      
-      {/* Floating Drone Survey Active Badge */}
-      <div className="absolute top-4 right-4 bg-white text-primary px-4 py-2.5 rounded-xl shadow-lg flex items-center gap-3">
-        <span className="w-2.5 h-2.5 rounded-full bg-[#d5a05b]"></span>
-        <div className="flex flex-col">
-          <span className="font-bold text-[11px] uppercase tracking-wide">Live Drone Audits</span>
-          <span className="text-[9px] text-primary/70 uppercase font-medium">Real-Time Site Monitoring</span>
-        </div>
-      </div>
-    </div>
-    
-    {/* Material Specs Card overlapping the image and border */}
-    <div className="mt-[-24px] relative z-10 bg-[#f9f9f6] mx-auto w-[96%] p-4 rounded-xl shadow-xl flex items-center gap-4 text-on-surface">
-      <div className="w-12 h-12 rounded-xl bg-[#00514b] text-white flex items-center justify-center shrink-0">
-        <span className="material-symbols-outlined text-[24px]">verified_user</span>
-      </div>
-      <div className="flex flex-col">
-        <span className="font-bold text-[15px] text-primary">Fe 550D TMT Steel & M30/M40 Concrete</span>
-        <span className="text-[13px] text-on-surface-variant">Batch-tested lab compression certification with every structural pour</span>
-      </div>
+      <img alt="Highgrade Construction About Visual" className="w-full h-auto object-cover" src="/aboutt.png"/>
     </div>
   </div>
 </div>
