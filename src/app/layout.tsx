@@ -3,6 +3,8 @@ import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
+import SmoothScrolling from "../components/SmoothScrolling";
+
 export const metadata: Metadata = {
   title: "High Grade Construction Company | Siliguri & Darjeeling Luxury Architectural Studio",
   description: "Bespoke residential, commercial & turnkey structural engineering",
@@ -14,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -22,9 +24,11 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
       </head>
       <body className="bg-surface font-body-md text-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container">
-        <Navbar />
-        {children}
-        <Footer />
+        <SmoothScrolling>
+          <Navbar />
+          {children}
+          <Footer />
+        </SmoothScrolling>
         {/* Floating WhatsApp CTA */}
         <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3 group">
           <div className="bg-white px-4 py-2 rounded-2xl shadow-lg border border-outline-variant/30 text-body-sm font-semibold text-on-surface opacity-0 translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 pointer-events-none hidden sm:block">
