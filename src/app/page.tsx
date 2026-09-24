@@ -89,88 +89,113 @@ export default function Home() {
 <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
 {/* Left Editorial Content Column */}
-<div className="lg:col-span-6 flex flex-col items-start">
-<div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary font-label-caps text-label-caps uppercase tracking-wider mb-4">
-                About Highgrade Construction
-              </div>
-<h2 className="font-headline-xl text-headline-xl text-primary font-bold leading-tight mb-5">
-                We're Engineers Before We're Builders.
-              </h2>
-<p className="font-body-lg text-body-lg text-on-surface-variant mb-6 leading-relaxed">
-                Founded in 2018, Highgrade Constructions was created with one belief: quality should never be compromised in construction.
-              </p>
-              <p className="font-body-lg text-body-lg text-on-surface-variant mb-6 leading-relaxed">
-                Too often, homeowners place their lifetime savings into projects managed by contractors who prioritize shortcuts over precision. The result is poor workmanship, structural issues, budget overruns, and unnecessary stress for families.
-              </p>
-              <p className="font-body-lg text-body-lg text-primary font-bold mb-4 leading-relaxed">
-                Highgrade takes a different approach.
-              </p>
-              <p className="font-body-lg text-body-lg text-on-surface-variant mb-6 leading-relaxed">
-                As a team of civil engineers, every project is designed and executed with technical accuracy, structural integrity, and strict adherence to engineering standards. From foundation to finishing, every detail is measured, planned, and built exactly as intended—because great homes deserve engineering, not guesswork.
-              </p>
-{/* 3 Feature Badges with technical icons */}
-<div className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full mb-6">
-<div className="flex flex-col gap-1 p-3.5 rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm">
-<div className="flex items-center gap-2 text-primary font-bold font-label-md text-label-md">
-<span className="material-symbols-outlined text-[20px]">engineering</span>
-<span>Licensed</span>
+<div className="lg:col-span-6 flex flex-col items-start pr-0 lg:pr-8">
+<div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#dbece8] text-primary font-bold text-[12px] uppercase tracking-wide mb-6">
+  ABOUT HIGHGRADE CONSTRUCTIONS
 </div>
-<span className="text-body-sm text-on-surface-variant">Structural Engineers</span>
+<h2 className="font-headline-xl text-[40px] lg:text-[48px] text-primary font-bold leading-tight mb-6">
+  We're Engineers Before<br className="hidden lg:block"/> We're Builders.
+</h2>
+<p className="font-body-lg text-[16px] text-on-surface-variant mb-10 leading-relaxed">
+  Founded in 2018, Highgrade Constructions is an engineer-led construction company delivering residential, commercial and industrial projects with technical precision, transparent execution and uncompromising quality.
+</p>
+
+{/* 4 Feature Icons Row */}
+<div className="grid grid-cols-2 sm:grid-cols-4 gap-6 w-full mb-8 text-center border-b border-outline-variant/30 pb-10">
+  <div className="flex flex-col items-center gap-3">
+    <div className="w-12 h-12 rounded-full bg-[#f0f6f4] text-primary flex items-center justify-center">
+      <span className="material-symbols-outlined text-[24px]">engineering</span>
+    </div>
+    <span className="text-[13px] text-on-surface-variant font-medium leading-tight">Civil Engineers<br/>Led Team</span>
+  </div>
+  <div className="flex flex-col items-center gap-3">
+    <div className="w-12 h-12 rounded-full bg-[#f0f6f4] text-primary flex items-center justify-center">
+      <span className="material-symbols-outlined text-[24px]">assignment_turned_in</span>
+    </div>
+    <span className="text-[13px] text-on-surface-variant font-medium leading-tight">IS Code<br/>Compliance</span>
+  </div>
+  <div className="flex flex-col items-center gap-3">
+    <div className="w-12 h-12 rounded-full bg-[#f0f6f4] text-primary flex items-center justify-center">
+      <span className="material-symbols-outlined text-[24px]">real_estate_agent</span>
+    </div>
+    <span className="text-[13px] text-on-surface-variant font-medium leading-tight">Transparent<br/>Planning & BOQ</span>
+  </div>
+  <div className="flex flex-col items-center gap-3">
+    <div className="w-12 h-12 rounded-full bg-[#f0f6f4] text-primary flex items-center justify-center">
+      <span className="material-symbols-outlined text-[24px]">drone</span>
+    </div>
+    <span className="text-[13px] text-on-surface-variant font-medium leading-tight">Drone<br/>Site Monitoring</span>
+  </div>
 </div>
-<div className="flex flex-col gap-1 p-3.5 rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm">
-<div className="flex items-center gap-2 text-primary font-bold font-label-md text-label-md">
-<span className="material-symbols-outlined text-[20px]">key</span>
-<span>Turnkey</span>
+
+{/* Stat Boxes */}
+<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full mb-8">
+  <div className="flex items-center gap-4 p-4 rounded-xl border border-[#d2ddd9] bg-transparent">
+    <div className="w-12 h-12 rounded-full bg-[#e8f1ef] text-primary flex items-center justify-center shrink-0">
+      <span className="material-symbols-outlined text-[24px]">location_city</span>
+    </div>
+    <div className="flex flex-col">
+      <span className="font-headline-sm text-[24px] font-bold text-primary leading-tight">2018</span>
+      <span className="text-[14px] text-on-surface-variant">Founded</span>
+    </div>
+  </div>
+  <div className="flex items-center gap-4 p-4 rounded-xl border border-[#d2ddd9] bg-transparent">
+    <div className="w-12 h-12 rounded-full bg-[#e8f1ef] text-primary flex items-center justify-center shrink-0">
+      <span className="material-symbols-outlined text-[24px]">groups</span>
+    </div>
+    <div className="flex flex-col">
+      <span className="font-headline-sm text-[24px] font-bold text-primary leading-tight">100%</span>
+      <span className="text-[14px] text-on-surface-variant">Engineer-Led Approach</span>
+    </div>
+  </div>
 </div>
-<span className="text-body-sm text-on-surface-variant">Guaranteed Handover</span>
-</div>
-<div className="flex flex-col gap-1 p-3.5 rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm">
-<div className="flex items-center gap-2 text-primary font-bold font-label-md text-label-md">
-<span className="material-symbols-outlined text-[20px]">explore</span>
-<span>Vastu</span>
-</div>
-<span className="text-body-sm text-on-surface-variant">Aligned Architecture</span>
-</div>
-</div>
-{/* Credentials Strip */}
-<div className="flex flex-wrap items-center gap-2 text-body-sm text-on-surface-variant pt-2 border-t border-outline-variant/30 w-full">
-<span className="inline-flex items-center gap-1 font-semibold text-primary">
-<span className="material-symbols-outlined text-[16px] text-secondary-container">verified</span>
-                  Statutory Clearance:
-                </span>
-<span>100% SMC, SJDA, GTA &amp; West Bengal Fire Board Compliance</span>
-</div>
+
+<div className="w-12 h-[2px] bg-[#d5a05b] mb-6"></div>
+
+<p className="font-body-md text-[15px] text-on-surface-variant mb-8 leading-relaxed">
+  From foundation to finishing, every detail is measured, planned and built with integrity—because great homes deserve engineering, not guesswork.
+</p>
+
+<a className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary hover:bg-primary-fixed-variant text-white transition-colors text-[15px] font-semibold" href="/about">
+  Our Story <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
 </div>
 {/* Right Visual Composition: Blueprint to Reality Layer */}
-<div className="lg:col-span-6 relative">
-<div className="relative rounded-2xl overflow-hidden shadow-2xl border border-outline-variant/40 bg-surface-container-highest">
-<img alt="Comprehensive Architectural Services Blueprint to Finished Villa" className="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDZeeGM0RTyIkzufqBPqvLDV3kPwroTGZ4Wb5cN8Kwh0_zJwg5cf2SBBQUZLiHY2d6jwE9hlMhQC3V0bVTzZbVN8kucGNzUdZLK8Xa6hQ8EUbCa1RISNRHkVd9Ug0-XS9W0QUEehvQQazp87iYGDvSi6sL5T4uYwG2AJ5a2prdLMwSJ22MbtusCZJbzVvlAXTDelxdWItXK94evf_jkFGQiV8h9TpHHcMv5pBuKFKDU08m95WIF1a_F-lsghw30klrbg"/>
-{/* Floating Technical Badge: Zero Tolerance */}
-<div className="absolute top-4 left-4 bg-[#0e1e1b]/90 backdrop-blur-md text-white border border-white/10 px-3.5 py-2 rounded-xl shadow-lg flex items-center gap-2.5">
-<span className="material-symbols-outlined text-secondary-container text-[20px]">straighten</span>
-<div>
-<div className="font-label-caps text-[11px] uppercase font-bold text-secondary-fixed">Zero Tolerance</div>
-<div className="text-[11px] text-white/70 font-mono">IS Code &amp; BIS Certified</div>
-</div>
-</div>
-{/* Floating Drone Survey Active Badge */}
-<div className="absolute top-4 right-4 bg-primary/90 backdrop-blur-md text-white border border-white/15 px-3 py-1.5 rounded-xl shadow-md flex items-center gap-2">
-<span className="w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
-<span className="font-label-caps text-[10px] uppercase tracking-wider font-bold">Live Drone Audits</span>
-</div>
-{/* Material Specs Card floating at bottom */}
-<div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-3.5 rounded-xl shadow-xl border border-primary/10 flex items-center justify-between text-on-surface">
-<div className="flex items-center gap-3">
-<div className="w-9 h-9 rounded-lg bg-primary text-white flex items-center justify-center shrink-0">
-<span className="material-symbols-outlined text-[18px]">verified_user</span>
-</div>
-<div>
-<div className="font-label-md text-label-md font-bold text-primary">Fe 550D TMT Steel &amp; M30/M40 Concrete</div>
-<div className="text-[12px] text-on-surface-variant">Batch-tested lab compression certification with every structural pour</div>
-</div>
-</div>
-</div>
-</div>
+<div className="lg:col-span-6 relative h-full flex flex-col justify-center">
+  <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-[#23423d] pt-3 px-3 pb-5">
+    <div className="relative rounded-xl overflow-hidden">
+      <img alt="Comprehensive Architectural Services Blueprint to Finished Villa" className="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDZeeGM0RTyIkzufqBPqvLDV3kPwroTGZ4Wb5cN8Kwh0_zJwg5cf2SBBQUZLiHY2d6jwE9hlMhQC3V0bVTzZbVN8kucGNzUdZLK8Xa6hQ8EUbCa1RISNRHkVd9Ug0-XS9W0QUEehvQQazp87iYGDvSi6sL5T4uYwG2AJ5a2prdLMwSJ22MbtusCZJbzVvlAXTDelxdWItXK94evf_jkFGQiV8h9TpHHcMv5pBuKFKDU08m95WIF1a_F-lsghw30klrbg"/>
+      
+      {/* Floating Technical Badge: Zero Tolerance */}
+      <div className="absolute top-4 left-4 bg-[#23423d] text-white px-4 py-2.5 rounded-xl shadow-lg flex items-center gap-3">
+        <span className="material-symbols-outlined text-[#fea12b] text-[22px]">straighten</span>
+        <div className="flex flex-col">
+          <span className="font-bold text-[11px] uppercase tracking-wide">Zero Tolerance</span>
+          <span className="text-[11px] text-white/80">IS Code & BTS Certified</span>
+        </div>
+      </div>
+      
+      {/* Floating Drone Survey Active Badge */}
+      <div className="absolute top-4 right-4 bg-white text-primary px-4 py-2.5 rounded-xl shadow-lg flex items-center gap-3">
+        <span className="w-2.5 h-2.5 rounded-full bg-[#d5a05b]"></span>
+        <div className="flex flex-col">
+          <span className="font-bold text-[11px] uppercase tracking-wide">Live Drone Audits</span>
+          <span className="text-[9px] text-primary/70 uppercase font-medium">Real-Time Site Monitoring</span>
+        </div>
+      </div>
+    </div>
+    
+    {/* Material Specs Card overlapping the image and border */}
+    <div className="mt-[-24px] relative z-10 bg-[#f9f9f6] mx-auto w-[96%] p-4 rounded-xl shadow-xl flex items-center gap-4 text-on-surface">
+      <div className="w-12 h-12 rounded-xl bg-[#00514b] text-white flex items-center justify-center shrink-0">
+        <span className="material-symbols-outlined text-[24px]">verified_user</span>
+      </div>
+      <div className="flex flex-col">
+        <span className="font-bold text-[15px] text-primary">Fe 550D TMT Steel & M30/M40 Concrete</span>
+        <span className="text-[13px] text-on-surface-variant">Batch-tested lab compression certification with every structural pour</span>
+      </div>
+    </div>
+  </div>
 </div>
 </div>
 </div>
