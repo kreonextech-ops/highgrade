@@ -25,10 +25,6 @@ export default function Home() {
                 Creating Trust.
               </span>
 </h1>
-{/* Editorial Subtitle */}
-<p className="font-subheading-editorial text-subheading-editorial text-outline-variant max-w-2xl leading-relaxed mb-8">
-              Bespoke residential, commercial &amp; turnkey structural engineering tailored for high-water-table plains of Siliguri and seismic hill slopes of Darjeeling &amp; Kalimpong.
-            </p>
 {/* Dual CTAs */}
 <div className="flex flex-wrap items-center gap-4 mb-8">
 <a className="relative overflow-hidden shimmer-badge inline-flex items-center gap-3 bg-[#F59A23] hover:bg-[#ffaa3b] text-on-secondary-fixed font-label-md text-label-md px-6 sm:px-7 py-4 rounded-xl font-bold shadow-[0_12px_28px_rgba(245,154,35,0.35)] hover:-translate-y-0.5 transition-all duration-300 group" href="/contact">
