@@ -85,7 +85,7 @@ export default function Home() {
     </div>
   </div>
 </section>
-      <section className="w-full py-20 lg:py-28 bg-surface text-on-surface relative overflow-hidden" id="about">
+      <section className="w-full py-12 lg:py-16 bg-surface text-on-surface relative overflow-hidden" id="about">
 <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
 {/* Left Editorial Content Column */}
@@ -100,8 +100,8 @@ export default function Home() {
   Founded in 2018, Highgrade Constructions is an engineer-led construction company delivering residential, commercial and industrial projects with technical precision, transparent execution and uncompromising quality.
 </p>
 
-{/* 4 Feature Icons Row */}
-<div className="grid grid-cols-2 sm:grid-cols-4 gap-6 w-full mb-8 text-center border-b border-outline-variant/30 pb-10">
+{/* 3 Feature Icons Row */}
+<div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full mb-8 text-center border-b border-outline-variant/30 pb-10">
   <div className="flex flex-col items-center gap-3">
     <div className="w-12 h-12 rounded-full bg-[#f0f6f4] text-primary flex items-center justify-center">
       <span className="material-symbols-outlined text-[24px]">engineering</span>
@@ -119,12 +119,6 @@ export default function Home() {
       <span className="material-symbols-outlined text-[24px]">real_estate_agent</span>
     </div>
     <span className="text-[13px] text-on-surface-variant font-medium leading-tight">Transparent<br/>Planning & BOQ</span>
-  </div>
-  <div className="flex flex-col items-center gap-3">
-    <div className="w-12 h-12 rounded-full bg-[#f0f6f4] text-primary flex items-center justify-center">
-      <span className="material-symbols-outlined text-[24px]">drone</span>
-    </div>
-    <span className="text-[13px] text-on-surface-variant font-medium leading-tight">Drone<br/>Site Monitoring</span>
   </div>
 </div>
 
