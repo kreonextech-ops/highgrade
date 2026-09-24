@@ -534,29 +534,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* 11 Landscape Development */}
-      <div className="group relative rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 h-[140px] sm:h-[120px] bg-[#0c2a25] col-span-12 flex items-center">
-        <div className="absolute inset-y-0 right-0 w-[60%] sm:w-[70%] lg:w-[80%]">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0c2a25] via-[#0c2a25]/60 to-transparent z-10" />
-          <img src="https://images.unsplash.com/photo-1558904541-efa843a96f09?q=80&w=1200&auto=format&fit=crop" alt="Landscape Development" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-        </div>
-        <div className="relative z-20 p-6 lg:p-8 flex items-center justify-between w-full text-white">
-          <div className="flex items-center gap-6">
-            <div className="flex flex-col items-center justify-center">
-               <span className="text-[#d5a05b] font-bold text-sm mb-1">11</span>
-               <span className="material-symbols-outlined text-white">park</span>
-            </div>
-            <div>
-               <h3 className="text-[18px] lg:text-[20px] font-bold text-white mb-1">Landscape Development</h3>
-               <p className="text-[12px] lg:text-[13px] text-white/70">Outdoor living spaces, gardens and site aesthetics.</p>
-            </div>
-          </div>
-          <a href="/projects" className="w-10 h-10 rounded-full border border-white/50 text-white flex items-center justify-center hover:bg-white hover:text-[#0c2a25] transition-colors shrink-0">
-            <span className="material-symbols-outlined text-[20px]">arrow_forward</span>
-          </a>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
