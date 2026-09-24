@@ -9,40 +9,40 @@ export default function Home() {
 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')" }}></div>
 </div>
 {/* Hero Content Vessel */}
-<div className="relative z-10 max-w-[1360px] w-full mx-auto px-4 sm:px-6 lg:px-8 flex-1 flex flex-col justify-between py-12 lg:py-16">
-<div className="max-w-3xl flex flex-col items-start pt-4 lg:pt-12">
+<div className="relative z-10 max-w-[1360px] w-full mx-auto px-4 sm:px-6 lg:px-8 flex-1 flex flex-col justify-between pt-0 pb-6 lg:pb-10">
+<div className="max-w-3xl flex flex-col items-start pt-2 lg:pt-4">
 {/* Category Tag Pill */}
-<div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 backdrop-blur-md mb-6 shadow-sm">
+<div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-black/40 border border-white/20 backdrop-blur-md mb-6 shadow-lg">
 <span className="w-2 h-2 rounded-full bg-[#fea12b] animate-pulse"></span>
-<span className="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed">
+<span className="font-label-caps text-label-caps uppercase tracking-widest text-white drop-shadow-md">
                 ARCHITECTURAL &amp; CIVIL MASTERY • PLAINS &amp; HILL TERRAINS
               </span>
 </div>
 {/* Massive Editorial Title */}
-<h1 className="font-display-hero text-[44px] sm:text-[58px] lg:text-[68px] text-white leading-[1.05] tracking-tight mb-6">
+<h1 className="font-display-hero text-[44px] sm:text-[58px] lg:text-[68px] text-white leading-[1.05] tracking-tight mb-6 drop-shadow-[0_4px_16px_rgba(0,0,0,0.6)]">
               Building Spaces. <br/>
-<span className="italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-secondary-fixed-dim via-secondary-fixed to-[#fea12b]">
+<span className="italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#ffd4a3] via-[#ffb86c] to-[#fea12b] drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
                 Creating Trust.
               </span>
 </h1>
 </div>
 
-<div className="flex flex-col items-start mt-auto pb-4 lg:pb-8">
+<div className="flex flex-col items-start mt-auto">
 {/* Dual CTAs */}
 <div className="flex flex-wrap items-center gap-4 mb-6">
-<a className="relative overflow-hidden shimmer-badge inline-flex items-center gap-3 bg-[#F59A23] hover:bg-[#ffaa3b] text-on-secondary-fixed font-label-md text-label-md px-6 sm:px-7 py-4 rounded-xl font-bold shadow-[0_12px_28px_rgba(245,154,35,0.35)] hover:-translate-y-0.5 transition-all duration-300 group" href="/contact">
+<a className="relative overflow-hidden shimmer-badge inline-flex items-center gap-3 bg-[#F59A23] hover:bg-[#ffaa3b] text-on-secondary-fixed font-label-md text-label-md px-6 sm:px-7 py-4 rounded-xl font-bold shadow-[0_8px_24px_rgba(0,0,0,0.3)] hover:-translate-y-0.5 transition-all duration-300 group" href="/contact">
 <span>Schedule Consultation</span>
 <span className="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-1">arrow_forward</span>
 </a>
-<a className="inline-flex items-center gap-2.5 px-6 sm:px-7 py-4 rounded-xl bg-white/10 hover:bg-white/15 border border-white/15 text-white backdrop-blur-md transition-all duration-300 group" href="/projects">
-<span className="material-symbols-outlined text-[20px] text-secondary-fixed group-hover:rotate-45 transition-transform duration-300">explore</span>
+<a className="inline-flex items-center gap-2.5 px-6 sm:px-7 py-4 rounded-xl bg-black/40 hover:bg-black/60 border border-white/20 text-white backdrop-blur-md transition-all duration-300 shadow-lg group" href="/projects">
+<span className="material-symbols-outlined text-[20px] text-[#fea12b] group-hover:rotate-45 transition-transform duration-300">explore</span>
 <span className="font-label-md text-label-md font-semibold">Explore Landmark Projects</span>
 </a>
 </div>
 {/* Direct Geographic Operating Strip */}
-<div className="flex items-center gap-2 text-white/80 font-body-sm text-body-sm bg-black/20 px-4 py-2 rounded-lg backdrop-blur-sm">
+<div className="flex items-center gap-2 text-white font-body-sm text-body-sm bg-black/50 px-4 py-2.5 rounded-lg backdrop-blur-md shadow-lg border border-white/10">
 <span className="material-symbols-outlined text-[18px] text-[#fea12b]">location_on</span>
-<span>Active Construction Across Siliguri, Darjeeling, Kurseong, Kalimpong &amp; Sikkim Foothills</span>
+<span className="tracking-wide">Active Construction Across Siliguri, Darjeeling, Kurseong, Kalimpong &amp; Sikkim Foothills</span>
 </div>
 </div>
 </div>
