@@ -1,8 +1,34 @@
+"use client";
+
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 
 export default function Navbar() {
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      // Hide navbar when scrolling down, but keep visible at the very top (first 50px)
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        setIsVisible(false);
+      } 
+      // Show navbar when scrolling up
+      else if (currentScrollY < lastScrollY) {
+        setIsVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
+
   return (
-<header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 px-3 sm:px-6 lg:px-8 pt-3 sm:pt-4 pointer-events-none">
+<header className={`fixed top-0 left-0 w-full z-50 transition-transform duration-500 ease-in-out px-3 sm:px-6 lg:px-8 pt-3 sm:pt-4 pointer-events-none ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
 <div className="max-w-[1400px] mx-auto pointer-events-auto">
 <div className="h-20 px-4 sm:px-6 lg:px-8 bg-[#0b1a18]/85 backdrop-blur-xl border border-white/10 rounded-2xl shadow-[0_16px_36px_rgba(0,0,0,0.35)] flex items-center justify-between gap-4 transition-all duration-300">
 {/* Brand Presentation */}
