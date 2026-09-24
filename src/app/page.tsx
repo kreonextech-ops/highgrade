@@ -7,11 +7,7 @@ export default function Home() {
 {/* Split Cinematic Terrain Backdrops (Left Siliguri Plains / Right Darjeeling Hillslopes) */}
 <div className="absolute inset-0 pointer-events-none z-0">
 <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')" }}></div>
-<div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/30"></div>
 </div>
-{/* Ambient Luxury Studio Lighting Spotlights */}
-<div className="absolute top-20 left-1/4 -translate-x-1/2 w-[650px] h-[400px] bg-primary/25 blur-[140px] rounded-full pointer-events-none"></div>
-<div className="absolute bottom-20 right-1/4 translate-x-1/4 w-[550px] h-[350px] bg-[#fea12b]/15 blur-[120px] rounded-full pointer-events-none"></div>
 {/* Hero Content Vessel */}
 <div className="relative z-10 max-w-[1360px] w-full mx-auto px-4 sm:px-6 lg:px-8 flex-1 flex flex-col justify-center py-12 lg:py-16">
 <div className="max-w-3xl flex flex-col items-start">
