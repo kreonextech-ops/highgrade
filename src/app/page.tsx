@@ -157,8 +157,8 @@ export default function Home() {
 {/* Right Visual Composition: Image Layer */}
 <div className="lg:col-span-6 relative h-full flex flex-col justify-center">
   <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-[#23423d] p-3">
-    <div className="relative rounded-xl overflow-hidden">
-      <img alt="Highgrade Construction About Visual" className="w-full h-auto object-cover" src="/aboutt.png"/>
+    <div className="relative rounded-xl overflow-hidden bg-[#1a322e] aspect-[4/3]">
+      <img alt="Highgrade Construction About Visual" className="w-full h-full object-cover" src="/aboutt.png"/>
     </div>
   </div>
 </div>
