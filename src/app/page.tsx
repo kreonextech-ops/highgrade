@@ -166,17 +166,6 @@ export default function Home() {
 </div>
 </section>
 <section className="w-full py-12 lg:py-16 bg-[#f9f9f6] text-on-surface relative overflow-hidden" id="terrains">
-  {/* Abstract Mountain SVG Background */}
-  <div className="absolute top-0 right-0 w-full max-w-[800px] h-full opacity-15 pointer-events-none">
-    <svg viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full object-cover origin-right scale-125">
-      <path d="M200 600L400 350L600 450L850 100V600H200Z" stroke="#00514b" strokeWidth="2" strokeLinejoin="round"/>
-      <path d="M100 600L300 420L450 480L750 200" stroke="#00514b" strokeWidth="1.5" strokeLinejoin="round"/>
-      <path d="M0 600L250 480L350 510L600 300" stroke="#00514b" strokeWidth="1" strokeLinejoin="round"/>
-      <path d="M400 350L450 400L550 320" stroke="#00514b" strokeWidth="1" strokeLinejoin="round"/>
-      <path d="M300 420L340 450L420 380" stroke="#00514b" strokeWidth="1" strokeLinejoin="round"/>
-    </svg>
-  </div>
-
   <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-10 gap-8">
       
