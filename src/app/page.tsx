@@ -165,112 +165,134 @@ export default function Home() {
 </div>
 </div>
 </section>
-      <section className="w-full py-20 lg:py-28 bg-surface-container-low text-on-surface" id="terrains">
-<div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
-<div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
-<div className="max-w-xl">
-<div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps uppercase tracking-wider mb-3">
-                Geographic Mastery
+<section className="w-full py-16 lg:py-24 bg-[#f9f9f6] text-on-surface relative overflow-hidden" id="terrains">
+  {/* Abstract Mountain SVG Placeholder in background */}
+  <div className="absolute top-0 right-0 w-full max-w-[800px] h-full opacity-[0.04] pointer-events-none overflow-hidden">
+    <svg viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full object-cover origin-right scale-125">
+      <path d="M200 600L400 350L600 450L850 100V600H200Z" stroke="#00514b" strokeWidth="2" strokeLinejoin="round"/>
+      <path d="M100 600L300 420L450 480L750 200" stroke="#00514b" strokeWidth="1.5" strokeLinejoin="round"/>
+      <path d="M0 600L250 480L350 510L600 300" stroke="#00514b" strokeWidth="1" strokeLinejoin="round"/>
+      <path d="M400 350L450 400L550 320" stroke="#00514b" strokeWidth="1" strokeLinejoin="round"/>
+      <path d="M300 420L340 450L420 380" stroke="#00514b" strokeWidth="1" strokeLinejoin="round"/>
+    </svg>
+  </div>
+
+  <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 lg:mb-16 gap-10">
+      
+      {/* Left Header */}
+      <div className="max-w-xl">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#faeddd] text-[#a06834] font-bold text-[12px] uppercase tracking-widest mb-6 shadow-sm">
+          Geographic Mastery
+        </div>
+        <h2 className="font-headline-xl text-[44px] lg:text-[56px] text-primary font-bold leading-[1.05] tracking-tight">
+          Engineered for Plains.<br />Anchored for Hills.
+        </h2>
+      </div>
+
+      {/* Right Header */}
+      <div className="max-w-md lg:pb-3">
+        <div className="w-10 h-[2px] bg-[#d5a05b] mb-4"></div>
+        <h3 className="font-bold text-[17px] text-primary mb-2">Two unique terrains. One engineering mindset.</h3>
+        <p className="text-[15px] text-on-surface-variant leading-relaxed">
+          High Grade combines deep local knowledge with specialized engineering expertise to deliver safe, durable and future-ready structures across North Bengal.
+        </p>
+      </div>
+
+    </div>
+
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      
+      {/* Plains Card */}
+      <div className="flex flex-col bg-white rounded-[20px] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-black/5 hover:-translate-y-1 transition-transform duration-300">
+        <div className="relative w-full h-[320px] lg:h-[360px]">
+          <img alt="Siliguri Plains Civil Architecture" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRX24UmdfJtcJYqwY3TC9F-ZNwDLMTlJq3x6oKiD9oJhx_HitPqGSBSC8aj75vIFqeMP4Te9Lbd5uwfa2c_-f8M0GE5tDIIK6OksF9QYjL46WAIU350fabm-Lce5uGbNkcbaf7yGzwxNHfLFDMNeH46p_-aGto_5QOAK6j6f9Ra3PQfwp6Fhk_H-UlOqRf-YTUQ6r6oC_tfrn7flYWrU1oVrqeM8ff3RcRUf5fBdQwkaF03LMOg50a" />
+          <div className="absolute top-5 left-5 bg-[#004d44] text-white px-4 py-2 rounded-full flex items-center gap-2 text-[11px] font-bold uppercase tracking-wider shadow-md">
+            <span className="material-symbols-outlined text-[16px]">location_on</span>
+            Siliguri & Terai Plains
+          </div>
+        </div>
+        
+        <div className="p-8 lg:p-10 flex flex-col flex-1 bg-white">
+          <h3 className="font-headline-lg text-[26px] lg:text-[30px] text-primary font-bold mb-3">Plains Civil Architecture</h3>
+          <p className="text-[15px] text-on-surface-variant leading-relaxed mb-10">
+            Modern residential, commercial and industrial structures designed for high humidity, high-water table conditions and long-term durability.
+          </p>
+          
+          {/* Features */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-full bg-[#f0f6f4] text-primary flex items-center justify-center shrink-0">
+                <span className="material-symbols-outlined text-[24px]">foundation</span>
               </div>
-<h2 className="font-headline-xl text-headline-xl text-primary font-bold">
-                Engineered for Plains. Anchored for Hills.
-              </h2>
-</div>
-<p className="font-body-md text-body-md text-on-surface-variant max-w-md">
-              Construction dynamics in North Bengal require distinct technical proficiencies. High Grade operates specialized engineering wings for both ecosystems.
-            </p>
-</div>
-<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-{/* Plains Construction (Siliguri Region) */}
-<div className="group flex flex-col rounded-2xl overflow-hidden bg-surface-container-lowest border border-outline-variant/30 shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
-<div className="relative w-full h-80 overflow-hidden">
-<img alt="Siliguri Commercial &amp; Modernist Architecture" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRX24UmdfJtcJYqwY3TC9F-ZNwDLMTlJq3x6oKiD9oJhx_HitPqGSBSC8aj75vIFqeMP4Te9Lbd5uwfa2c_-f8M0GE5tDIIK6OksF9QYjL46WAIU350fabm-Lce5uGbNkcbaf7yGzwxNHfLFDMNeH46p_-aGto_5QOAK6j6f9Ra3PQfwp6Fhk_H-UlOqRf-YTUQ6r6oC_tfrn7flYWrU1oVrqeM8ff3RcRUf5fBdQwkaF03LMOg50a"/>
-<div className="absolute inset-0 bg-gradient-to-t from-[#0a1514]/90 via-[#0a1514]/20 to-transparent"></div>
-<div className="absolute top-4 left-4">
-<span className="px-3.5 py-1.5 rounded-full bg-primary text-white font-label-caps text-label-caps uppercase tracking-wider shadow-sm">
-                    Siliguri &amp; Terai Plains
-                  </span>
-</div>
-<div className="absolute bottom-4 left-5 right-5">
-<h3 className="font-headline-lg text-headline-lg text-white font-bold">Plains Civil Architecture</h3>
-</div>
-</div>
-<div className="p-6 sm:p-8 flex-1 flex flex-col justify-between">
-<div>
-<p className="font-body-md text-body-md text-on-surface-variant mb-5 leading-relaxed">
-                    High-volume commercial centers, contemporary residential bungalows, and structural framing tailored to high humidity, sub-surface ground waters, and heavy load dynamics.
-                  </p>
-<ul className="flex flex-col gap-3 mb-6 font-body-sm text-body-sm text-on-surface">
-<li className="flex items-center gap-3">
-<span className="material-symbols-outlined text-secondary-container text-[18px]">check_circle</span>
-<span>Deep Pile Foundations &amp; High-Water Table Waterproofing Membranes</span>
-</li>
-<li className="flex items-center gap-3">
-<span className="material-symbols-outlined text-secondary-container text-[18px]">check_circle</span>
-<span>Commercial Plazas, Mixed-Use Showrooms &amp; Retail Complexes</span>
-</li>
-<li className="flex items-center gap-3">
-<span className="material-symbols-outlined text-secondary-container text-[18px]">check_circle</span>
-<span>Gated Communities &amp; Modernist Sprawling Bungalows</span>
-</li>
-<li className="flex items-center gap-3">
-<span className="material-symbols-outlined text-secondary-container text-[18px]">check_circle</span>
-<span>Integrated Solar Rooftops &amp; Rainwater Harvesting Networks</span>
-</li>
-</ul>
-</div>
-<a className="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-bold hover:text-secondary group-hover:translate-x-1 transition-all" href="/projects">
-<span>View Plains Portfolio</span>
-<span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-</a>
-</div>
-</div>
-{/* Hills Construction (Darjeeling & Kalimpong) */}
-<div className="group flex flex-col rounded-2xl overflow-hidden bg-surface-container-lowest border border-outline-variant/30 shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
-<div className="relative w-full h-80 overflow-hidden">
-<img alt="Darjeeling Cantilever Hill Villa Architecture" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO2FjXotqyDwbgxF_InhdiCX0GTjDtF_csTF6QwDke1SYYvhLR0yiQvYzpHz5R7X1IRu0E9YU1_7e035nUfMq5joMjIhKjGUlKzkCp3dyXSmlDRauV4SwrF7Jc7g4UV82uY9vPr-dGRLWeWTNxZPC9HqfpX1JYpAt95-2460fRMUuclHnh9GcS3Eq2PkLX1_bjZ_0-Pv-MPR9LP4u6bEiSblZmYPmwVnRyENadRbhQdmFajhjRREl3"/>
-<div className="absolute inset-0 bg-gradient-to-t from-[#0a1514]/90 via-[#0a1514]/20 to-transparent"></div>
-<div className="absolute top-4 left-4">
-<span className="px-3.5 py-1.5 rounded-full bg-secondary text-white font-label-caps text-label-caps uppercase tracking-wider shadow-sm">
-                    Darjeeling &amp; Kalimpong Hills
-                  </span>
-</div>
-<div className="absolute bottom-4 left-5 right-5">
-<h3 className="font-headline-lg text-headline-lg text-white font-bold">Himalayan Hill Engineering</h3>
-</div>
-</div>
-<div className="p-6 sm:p-8 flex-1 flex flex-col justify-between">
-<div>
-<p className="font-body-md text-body-md text-on-surface-variant mb-5 leading-relaxed">
-                    Specialist geotechnical slope anchors, micro-piling, stepped RCC retaining networks, and seismic Zone-IV &amp; V compliant cantilever structures built on dramatic contours.
-                  </p>
-<ul className="flex flex-col gap-3 mb-6 font-body-sm text-body-sm text-on-surface">
-<li className="flex items-center gap-3">
-<span className="material-symbols-outlined text-secondary-container text-[18px]">check_circle</span>
-<span>Geotechnical Soil-Shear Profiling &amp; Rock Bolt Slope Stabilization</span>
-</li>
-<li className="flex items-center gap-3">
-<span className="material-symbols-outlined text-secondary-container text-[18px]">check_circle</span>
-<span>Engineered RCC Retaining Walls &amp; High-Gravity Gabion Baskets</span>
-</li>
-<li className="flex items-center gap-3">
-<span className="material-symbols-outlined text-secondary-container text-[18px]">check_circle</span>
-<span>Seismic Shear-Wall Integration for Multi-Tier Mountain Residences</span>
-</li>
-<li className="flex items-center gap-3">
-<span className="material-symbols-outlined text-secondary-container text-[18px]">check_circle</span>
-<span>Narrow Hill-Road Heavy Logistics &amp; Extreme Weather Concreting</span>
-</li>
-</ul>
-</div>
-<a className="inline-flex items-center gap-2 font-label-md text-label-md text-primary font-bold hover:text-secondary group-hover:translate-x-1 transition-all" href="/projects">
-<span>View Hills Portfolio</span>
-<span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-</a>
-</div>
-</div>
-</div>
-</div>
+              <span className="text-[13px] font-medium leading-snug text-primary">Deep Pile<br/>Foundations</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-full bg-[#f0f6f4] text-primary flex items-center justify-center shrink-0">
+                <span className="material-symbols-outlined text-[24px]">domain</span>
+              </div>
+              <span className="text-[13px] font-medium leading-snug text-primary">Commercial &<br/>Residential Projects</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-full bg-[#f0f6f4] text-primary flex items-center justify-center shrink-0">
+                <span className="material-symbols-outlined text-[24px]">water_drop</span>
+              </div>
+              <span className="text-[13px] font-medium leading-snug text-primary">High-Water Table<br/>Solutions</span>
+            </div>
+          </div>
+          
+          <a className="inline-flex items-center gap-2 font-bold text-primary hover:text-[#d5a05b] transition-colors mt-auto group" href="/projects">
+            View Plains Portfolio <span className="material-symbols-outlined transition-transform group-hover:translate-x-1 text-[20px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      {/* Hills Card */}
+      <div className="flex flex-col bg-white rounded-[20px] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-black/5 hover:-translate-y-1 transition-transform duration-300">
+        <div className="relative w-full h-[320px] lg:h-[360px]">
+          <img alt="Darjeeling Himalayan Hill Engineering" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO2FjXotqyDwbgxF_InhdiCX0GTjDtF_csTF6QwDke1SYYvhLR0yiQvYzpHz5R7X1IRu0E9YU1_7e035nUfMq5joMjIhKjGUlKzkCp3dyXSmlDRauV4SwrF7Jc7g4UV82uY9vPr-dGRLWeWTNxZPC9HqfpX1JYpAt95-2460fRMUuclHnh9GcS3Eq2PkLX1_bjZ_0-Pv-MPR9LP4u6bEiSblZmYPmwVnRyENadRbhQdmFajhjRREl3" />
+          <div className="absolute top-5 left-5 bg-[#936025] text-white px-4 py-2 rounded-full flex items-center gap-2 text-[11px] font-bold uppercase tracking-wider shadow-md">
+            <span className="material-symbols-outlined text-[16px]">location_on</span>
+            Darjeeling & Kalimpong Hills
+          </div>
+        </div>
+        
+        <div className="p-8 lg:p-10 flex flex-col flex-1 bg-white">
+          <h3 className="font-headline-lg text-[26px] lg:text-[30px] text-primary font-bold mb-3">Himalayan Hill Engineering</h3>
+          <p className="text-[15px] text-on-surface-variant leading-relaxed mb-10">
+            Specialized engineering for steep slopes, seismic zones and challenging terrains, ensuring stability, safety and longevity in hill environments.
+          </p>
+          
+          {/* Features */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-full bg-[#f0f6f4] text-primary flex items-center justify-center shrink-0">
+                <span className="material-symbols-outlined text-[24px]">terrain</span>
+              </div>
+              <span className="text-[13px] font-medium leading-snug text-primary">Slope Stabilization<br/>& Rock Anchors</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-full bg-[#f0f6f4] text-primary flex items-center justify-center shrink-0">
+                <span className="material-symbols-outlined text-[24px]">grid_on</span>
+              </div>
+              <span className="text-[13px] font-medium leading-snug text-primary">RCC Retaining Walls<br/>& Gabion Systems</span>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-full bg-[#f0f6f4] text-primary flex items-center justify-center shrink-0">
+                <span className="material-symbols-outlined text-[24px]">ssid_chart</span>
+              </div>
+              <span className="text-[13px] font-medium leading-snug text-primary">Seismic-Resilient<br/>Structures</span>
+            </div>
+          </div>
+          
+          <a className="inline-flex items-center gap-2 font-bold text-primary hover:text-[#d5a05b] transition-colors mt-auto group" href="/projects">
+            View Hills Portfolio <span className="material-symbols-outlined transition-transform group-hover:translate-x-1 text-[20px]">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
       <section className="w-full py-20 lg:py-28 bg-surface text-on-surface" id="services">
 <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
