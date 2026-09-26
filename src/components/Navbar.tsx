@@ -66,8 +66,8 @@ export default function Navbar() {
 </Link>
 </div>
 <div className="relative group">
-<Link className="inline-flex items-center gap-1 font-label-md text-label-md px-2 py-2 rounded-xl text-white/80 hover:text-white hover:bg-white/5 transition-all" href="/projects">
-<span>Projects</span>
+<Link className="inline-flex items-center gap-1 font-label-md text-label-md px-2 py-2 rounded-xl text-white/80 hover:text-white hover:bg-white/5 transition-all" href="/portfolio">
+<span>Portfolio</span>
 <span className="material-symbols-outlined text-[16px] transition-transform group-hover:rotate-180">expand_more</span>
 </Link>
 </div>
