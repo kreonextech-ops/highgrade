@@ -1,4 +1,5 @@
 "use client";
+import { motion } from 'framer-motion';
 
 import React from "react";
 
@@ -116,146 +117,122 @@ export default function Services() {
       </div>
 
       {/* SERVICES GRID SECTION */}
-      <section className="w-full py-20 bg-white">
-        <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-            <div className="max-w-2xl">
-              <span className="text-sm font-bold uppercase tracking-widest text-gray-500 mb-2 block">OUR SERVICES</span>
-              <h2 className="text-4xl lg:text-5xl font-bold text-[#0d1f1c]">Services Tailored to Your Vision</h2>
-            </div>
-            <div className="max-w-md flex flex-col items-start md:items-end">
-              <p className="text-gray-600 mb-4 md:text-right">
-                We offer a comprehensive range of construction and infrastructure services, combining technical expertise with practical, sustainable solutions.
-              </p>
-              <a href="#" className="inline-flex items-center gap-2 text-[#0d1f1c] font-bold hover:text-[#fea12b] transition-colors pb-1 border-b-2 border-[#0d1f1c] hover:border-[#fea12b]">
-                View All Services <span className="material-symbols-outlined text-[20px]">arrow_forward</span>
-              </a>
-            </div>
-          </div>
+<section className="w-full py-16 lg:py-24 bg-[#fbfbfa] text-on-surface relative overflow-hidden" id="services">
+  {/* Abstract Mountain/Drawing Background Placeholder */}
+  <div className="absolute top-0 left-0 w-full h-[500px] opacity-40 pointer-events-none">
+     <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1542224566-6e85f2e6772f?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-30 grayscale mix-blend-multiply"></div>
+     <div className="absolute inset-0 bg-gradient-to-b from-[#fbfbfa]/40 via-[#fbfbfa]/80 to-[#fbfbfa]"></div>
+  </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Service Card 1 */}
-            <div className="bg-[#f9fafa] border border-gray-100 p-4 rounded-xl flex flex-col group hover:shadow-lg transition-all duration-300">
-              <div className="w-full h-48 mb-6 overflow-hidden rounded-lg relative">
-                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Residential Construction" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                <div className="absolute -bottom-5 left-4 bg-white w-10 h-10 rounded-md shadow flex items-center justify-center text-[#fea12b]">
-                  <span className="material-symbols-outlined text-[20px]">apartment</span>
-                </div>
-              </div>
-              <h3 className="text-lg font-bold text-[#0d1f1c] mb-2 mt-2">Residential Construction</h3>
-              <p className="text-sm text-gray-600 mb-6 flex-1">Custom homes, villas and independent houses built with quality, comfort and care.</p>
-              <a href="#" className="inline-flex items-center gap-1 text-sm font-bold text-[#0d1f1c] group-hover:text-[#fea12b] transition-colors">
-                Learn More <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
-              </a>
-            </div>
+  <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    
+    {/* Header Section */}
+    <div className="mb-14">
+      <div className="flex items-center gap-4 mb-6">
+        <span className="font-label-caps text-[12px] uppercase text-[#a06834] font-bold tracking-widest">Our Core Services</span>
+        <div className="w-16 h-[2px] bg-[#d5a05b]"></div>
+      </div>
+      <h2 className="font-headline-xl text-[40px] lg:text-[56px] text-primary font-bold mb-4 leading-[1.1]">
+        Complete Construction <br className="hidden sm:block"/><span className="text-[#a06834]">Solutions Under One Roof</span>
+      </h2>
+      <p className="text-[15px] lg:text-[16px] text-on-surface-variant max-w-3xl leading-relaxed mb-10">
+        From concept to completion, High Grade delivers end-to-end construction solutions with engineering expertise, modern design, and uncompromising quality.
+      </p>
 
-            {/* Service Card 2 */}
-            <div className="bg-[#f9fafa] border border-gray-100 p-4 rounded-xl flex flex-col group hover:shadow-lg transition-all duration-300">
-              <div className="w-full h-48 mb-6 overflow-hidden rounded-lg relative">
-                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Commercial Construction" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                <div className="absolute -bottom-5 left-4 bg-white w-10 h-10 rounded-md shadow flex items-center justify-center text-[#fea12b]">
-                  <span className="material-symbols-outlined text-[20px]">domain</span>
-                </div>
-              </div>
-              <h3 className="text-lg font-bold text-[#0d1f1c] mb-2 mt-2">Commercial Construction</h3>
-              <p className="text-sm text-gray-600 mb-6 flex-1">Offices, retail spaces, hotels and business complexes designed for growth.</p>
-              <a href="#" className="inline-flex items-center gap-1 text-sm font-bold text-[#0d1f1c] group-hover:text-[#fea12b] transition-colors">
-                Learn More <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
-              </a>
-            </div>
-
-            {/* Service Card 3 */}
-            <div className="bg-[#f9fafa] border border-gray-100 p-4 rounded-xl flex flex-col group hover:shadow-lg transition-all duration-300">
-              <div className="w-full h-48 mb-6 overflow-hidden rounded-lg relative">
-                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Industrial Construction" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                <div className="absolute -bottom-5 left-4 bg-white w-10 h-10 rounded-md shadow flex items-center justify-center text-[#fea12b]">
-                  <span className="material-symbols-outlined text-[20px]">factory</span>
-                </div>
-              </div>
-              <h3 className="text-lg font-bold text-[#0d1f1c] mb-2 mt-2">Industrial Construction</h3>
-              <p className="text-sm text-gray-600 mb-6 flex-1">Factories, warehouses and infrastructure for industrial development.</p>
-              <a href="#" className="inline-flex items-center gap-1 text-sm font-bold text-[#0d1f1c] group-hover:text-[#fea12b] transition-colors">
-                Learn More <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
-              </a>
-            </div>
-
-            {/* Service Card 4 */}
-            <div className="bg-[#f9fafa] border border-gray-100 p-4 rounded-xl flex flex-col group hover:shadow-lg transition-all duration-300">
-              <div className="w-full h-48 mb-6 overflow-hidden rounded-lg relative">
-                <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hill-Centric Projects" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                <div className="absolute -bottom-5 left-4 bg-white w-10 h-10 rounded-md shadow flex items-center justify-center text-[#fea12b]">
-                  <span className="material-symbols-outlined text-[20px]">landscape</span>
-                </div>
-              </div>
-              <h3 className="text-lg font-bold text-[#0d1f1c] mb-2 mt-2">Hill-Centric Projects</h3>
-              <p className="text-sm text-gray-600 mb-6 flex-1">Specialized construction for hilly terrains with safe, durable and climate-resilient design.</p>
-              <a href="#" className="inline-flex items-center gap-1 text-sm font-bold text-[#0d1f1c] group-hover:text-[#fea12b] transition-colors">
-                Learn More <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
-              </a>
-            </div>
-
-            {/* Service Card 5 */}
-            <div className="bg-[#f9fafa] border border-gray-100 p-4 rounded-xl flex flex-col group hover:shadow-lg transition-all duration-300">
-              <div className="w-full h-48 mb-6 overflow-hidden rounded-lg relative">
-                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Architectural & Structural Design" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                <div className="absolute -bottom-5 left-4 bg-white w-10 h-10 rounded-md shadow flex items-center justify-center text-[#fea12b]">
-                  <span className="material-symbols-outlined text-[20px]">architecture</span>
-                </div>
-              </div>
-              <h3 className="text-lg font-bold text-[#0d1f1c] mb-2 mt-2">Architectural & Structural Design</h3>
-              <p className="text-sm text-gray-600 mb-6 flex-1">End-to-end design, planning and structural solutions.</p>
-              <a href="#" className="inline-flex items-center gap-1 text-sm font-bold text-[#0d1f1c] group-hover:text-[#fea12b] transition-colors">
-                Learn More <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
-              </a>
-            </div>
-
-            {/* Service Card 6 */}
-            <div className="bg-[#f9fafa] border border-gray-100 p-4 rounded-xl flex flex-col group hover:shadow-lg transition-all duration-300">
-              <div className="w-full h-48 mb-6 overflow-hidden rounded-lg relative">
-                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Interior & Exterior Works" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                <div className="absolute -bottom-5 left-4 bg-white w-10 h-10 rounded-md shadow flex items-center justify-center text-[#fea12b]">
-                  <span className="material-symbols-outlined text-[20px]">chair</span>
-                </div>
-              </div>
-              <h3 className="text-lg font-bold text-[#0d1f1c] mb-2 mt-2">Interior & Exterior Works</h3>
-              <p className="text-sm text-gray-600 mb-6 flex-1">Functional and aesthetic interiors and exteriors tailored to your style.</p>
-              <a href="#" className="inline-flex items-center gap-1 text-sm font-bold text-[#0d1f1c] group-hover:text-[#fea12b] transition-colors">
-                Learn More <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
-              </a>
-            </div>
-
-            {/* Service Card 7 */}
-            <div className="bg-[#f9fafa] border border-gray-100 p-4 rounded-xl flex flex-col group hover:shadow-lg transition-all duration-300">
-              <div className="w-full h-48 mb-6 overflow-hidden rounded-lg relative">
-                <img src="https://images.unsplash.com/photo-1504307651254-35680f356f58?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Renovation & Remodeling" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                <div className="absolute -bottom-5 left-4 bg-white w-10 h-10 rounded-md shadow flex items-center justify-center text-[#fea12b]">
-                  <span className="material-symbols-outlined text-[20px]">handyman</span>
-                </div>
-              </div>
-              <h3 className="text-lg font-bold text-[#0d1f1c] mb-2 mt-2">Renovation & Remodeling</h3>
-              <p className="text-sm text-gray-600 mb-6 flex-1">Upgrade, expand or transform your existing space.</p>
-              <a href="#" className="inline-flex items-center gap-1 text-sm font-bold text-[#0d1f1c] group-hover:text-[#fea12b] transition-colors">
-                Learn More <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
-              </a>
-            </div>
-
-            {/* Service Card 8 */}
-            <div className="bg-[#f9fafa] border border-gray-100 p-4 rounded-xl flex flex-col group hover:shadow-lg transition-all duration-300">
-              <div className="w-full h-48 mb-6 overflow-hidden rounded-lg relative">
-                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Turnkey Projects" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                <div className="absolute -bottom-5 left-4 bg-white w-10 h-10 rounded-md shadow flex items-center justify-center text-[#fea12b]">
-                  <span className="material-symbols-outlined text-[20px]">key</span>
-                </div>
-              </div>
-              <h3 className="text-lg font-bold text-[#0d1f1c] mb-2 mt-2">Turnkey Projects</h3>
-              <p className="text-sm text-gray-600 mb-6 flex-1">Complete solution from concept to handover — we handle everything.</p>
-              <a href="#" className="inline-flex items-center gap-1 text-sm font-bold text-[#0d1f1c] group-hover:text-[#fea12b] transition-colors">
-                Learn More <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
-              </a>
-            </div>
+      {/* 4 Trust Badges */}
+      <div className="flex flex-wrap items-center gap-6 lg:gap-12">
+        <div className="flex items-center gap-3">
+          <span className="material-symbols-outlined text-[#a06834] text-[28px]">groups</span>
+          <div className="flex flex-col">
+             <span className="font-bold text-primary text-[13px]">One Team</span>
+             <span className="text-[11px] text-on-surface-variant font-medium">Design to Delivery</span>
           </div>
         </div>
-      </section>
+        <div className="hidden sm:block w-[1px] h-8 bg-black/10"></div>
+        <div className="flex items-center gap-3">
+          <span className="material-symbols-outlined text-[#a06834] text-[28px]">settings</span>
+          <div className="flex flex-col">
+             <span className="font-bold text-primary text-[13px]">End-to-End Support</span>
+             <span className="text-[11px] text-on-surface-variant font-medium">Hassle-Free Execution</span>
+          </div>
+        </div>
+        <div className="hidden sm:block w-[1px] h-8 bg-black/10"></div>
+        <div className="flex items-center gap-3">
+          <span className="material-symbols-outlined text-[#a06834] text-[28px]">verified_user</span>
+          <div className="flex flex-col">
+             <span className="font-bold text-primary text-[13px]">Quality Assurance</span>
+             <span className="text-[11px] text-on-surface-variant font-medium">Built to Last</span>
+          </div>
+        </div>
+        <div className="hidden sm:block w-[1px] h-8 bg-black/10"></div>
+        <div className="flex items-center gap-3">
+          <span className="material-symbols-outlined text-[#a06834] text-[28px]">landscape</span>
+          <div className="flex flex-col">
+             <span className="font-bold text-primary text-[13px]">Built for North Bengal</span>
+             <span className="text-[11px] text-on-surface-variant font-medium">Plains & Hills Expertise</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Bento Box Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-12 gap-5">
+       
+      {[
+        { num: "01", title: "Turnkey\nConstruction", desc: "Complete end-to-end residential and commercial construction solutions.", icon: "home", img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800&auto=format&fit=crop", cols: "col-span-12 md:col-span-5", h: "min-h-[280px] lg:min-h-[320px]" },
+        { num: "02", title: "Residential\nHomes", desc: "Modern villas, independent houses and family homes built for lasting generations.", icon: "cottage", img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop", cols: "col-span-12 md:col-span-4", h: "min-h-[280px] lg:min-h-[320px]" },
+        { num: "03", title: "Hill\nArchitecture", desc: "Engineered for slopes and mountain terrain with specialized techniques.", icon: "landscape", img: "https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=800&auto=format&fit=crop", cols: "col-span-12 md:col-span-3", h: "min-h-[280px] lg:min-h-[320px]" },
+        { num: "04", title: "Architectural\nPlanning", desc: "Functional, aesthetic and site-specific space planning.", icon: "architecture", img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop", cols: "col-span-12 md:col-span-4", h: "min-h-[280px] lg:min-h-[320px]" },
+        { num: "05", title: "2D Floor\nPlans", desc: "Accurate technical planning drawings for approvals and execution.", icon: "draw", img: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=800&auto=format&fit=crop", cols: "col-span-12 md:col-span-4", h: "min-h-[280px] lg:min-h-[320px]" },
+        { num: "06", title: "3D Elevation\nDesign", desc: "Realistic exterior visualization to help you see your dream before construction.", icon: "view_in_ar", img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop", cols: "col-span-12 md:col-span-4", h: "min-h-[280px] lg:min-h-[320px]" },
+        { num: "07", title: "Structural\nDesign", desc: "Safe RCC and steel structural solutions with precision.", icon: "foundation", img: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800&auto=format&fit=crop", cols: "col-span-12 md:col-span-3", h: "min-h-[280px] lg:min-h-[320px]" },
+        { num: "08", title: "Interior\nDesign", desc: "Elegant and practical interiors that match your lifestyle.", icon: "chair", img: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=600&auto=format&fit=crop", cols: "col-span-12 md:col-span-3", h: "min-h-[280px] lg:min-h-[320px]" },
+        { num: "09", title: "Renovation &\nRemodeling", desc: "Upgrade and transform existing spaces beautifully and efficiently.", icon: "handyman", img: "/portfolio/renovation_WhatsApp_Image_2026-09-10_at_1.57.51_PM__1_.jpeg", cols: "col-span-12 md:col-span-3", h: "min-h-[280px] lg:min-h-[320px]" },
+        { num: "10", title: "Project\nManagement", desc: "Quality control, timeline management and budget supervision.", icon: "assignment", img: "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?q=80&w=600&auto=format&fit=crop", cols: "col-span-12 md:col-span-3", h: "min-h-[280px] lg:min-h-[320px]" }
+      ].map((srv, index) => {
+         const isGreen = index % 2 === 0;
+         
+         // Fix 1: Make gradient only cover ~50% of the card and lower the opacity
+         const gradientOverlay = isGreen 
+            ? "from-[#0c2a25]/90 via-[#0c2a25]/60 via-40% to-transparent to-60%"
+            : "from-[#F59A23]/90 via-[#F59A23]/60 via-40% to-transparent to-60%";
+            
+         // Fix 2: Improve contrast on orange background by using dark text
+         const titleColor = isGreen ? "text-white" : "text-gray-900";
+         const descColor = isGreen ? "text-white/80" : "text-gray-800";
+         const numColor = isGreen ? "text-[#d5a05b]" : "text-gray-900";
+         const iconColor = isGreen ? "text-white" : "text-gray-900";
+         const arrowClass = isGreen 
+            ? "border-white/50 text-white hover:bg-white hover:text-[#0c2a25]" 
+            : "border-gray-900/30 text-gray-900 hover:bg-gray-900 hover:text-[#F59A23]";
+
+         return (
+           <motion.div key={index} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: (index%3)*0.1 }} className={`group relative rounded-3xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 ${srv.h} bg-black/5 ${srv.cols}`}>
+             
+             {/* Image now stretches full width but is overlayed by the gradient */}
+             <div className="absolute inset-0 overflow-hidden w-full">
+               <div className={`absolute inset-0 bg-gradient-to-r ${gradientOverlay} z-10`} />
+               <img src={srv.img} alt={srv.title.replace(/\\n/g, ' ')} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+             </div>
+
+             {/* Constrain text width so it doesn't bleed into the transparent right side */}
+             <div className="relative z-20 h-full p-6 lg:p-7 flex flex-col items-start w-[85%] sm:w-[65%] lg:w-[55%]">
+               <div className="flex items-center gap-3 mb-3">
+                  <span className={`font-bold text-sm ${numColor}`}>{srv.num}</span>
+                  <span className={`material-symbols-outlined ${iconColor}`}>{srv.icon}</span>
+               </div>
+               <h3 className={`text-[20px] lg:text-[22px] font-bold leading-[1.1] mb-2 whitespace-pre-line ${titleColor}`}>{srv.title.replace(/\\n/g, '\n')}</h3>
+               <p className={`text-[12px] lg:text-[13px] leading-relaxed mb-auto pr-2 ${descColor}`}>{srv.desc}</p>
+               <a href="/portfolio" className={`w-8 h-8 rounded-full border flex items-center justify-center transition-colors mt-3 ${arrowClass}`}>
+                 <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
+               </a>
+             </div>
+           </motion.div>
+         );
+      })}
+    </div>
+  </div>
+</section>
 
       {/* WHY CHOOSE OUR SERVICES */}
       <section className="w-full bg-[#f4f3f0] py-0 flex flex-col lg:flex-row items-stretch">
@@ -317,70 +294,6 @@ export default function Services() {
               </div>
               <h3 className="text-lg font-bold text-[#0d1f1c] mb-2">Sustainable Approach</h3>
               <p className="text-gray-600 text-sm">Environment-friendly and future-ready construction.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* OUR PROCESS */}
-      <section className="w-full py-20 lg:py-28 bg-[#f8f9fa] relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03] mix-blend-overlay pointer-events-none"></div>
-        <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-sm font-bold uppercase tracking-widest text-gray-500 mb-2 block">OUR PROCESS</span>
-            <h2 className="text-4xl lg:text-5xl font-bold text-[#0d1f1c] mb-4">From Concept to Creation</h2>
-            <p className="text-gray-600">A streamlined process to ensure your project is delivered smoothly and successfully.</p>
-          </div>
-
-          <div className="relative">
-            {/* Connecting Line - Desktop Only */}
-            <div className="hidden md:block absolute top-[40px] left-[10%] right-[10%] h-[2px] bg-[#fea12b] opacity-40 z-0"></div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
-              {/* Step 1 */}
-              <div className="flex flex-col items-center text-center">
-                <div className="w-20 h-20 rounded-full bg-white border-2 border-gray-200 shadow-md flex items-center justify-center text-[#0d1f1c] mb-4 relative z-10">
-                  <span className="material-symbols-outlined text-[32px]">article</span>
-                </div>
-                <h3 className="text-lg font-bold text-[#0d1f1c]">01<br/>Consultation</h3>
-                <p className="text-sm text-gray-600 mt-2">Understand<br/>your needs</p>
-                <div className="hidden md:block absolute right-0 top-10 translate-x-1/2 -translate-y-1/2 text-[#fea12b] bg-[#f8f9fa] z-10">
-                   <span className="material-symbols-outlined text-[24px]">arrow_forward</span>
-                </div>
-              </div>
-
-              {/* Step 2 */}
-              <div className="flex flex-col items-center text-center">
-                <div className="w-20 h-20 rounded-full bg-white border-2 border-gray-200 shadow-md flex items-center justify-center text-[#0d1f1c] mb-4 relative z-10">
-                  <span className="material-symbols-outlined text-[32px]">lightbulb</span>
-                </div>
-                <h3 className="text-lg font-bold text-[#0d1f1c]">02<br/>Planning & Design</h3>
-                <p className="text-sm text-gray-600 mt-2">Detailed design<br/>and approvals</p>
-                <div className="hidden md:block absolute right-0 top-10 translate-x-1/2 -translate-y-1/2 text-[#fea12b] bg-[#f8f9fa] z-10">
-                   <span className="material-symbols-outlined text-[24px]">arrow_forward</span>
-                </div>
-              </div>
-
-              {/* Step 3 */}
-              <div className="flex flex-col items-center text-center">
-                <div className="w-20 h-20 rounded-full bg-white border-2 border-gray-200 shadow-md flex items-center justify-center text-[#0d1f1c] mb-4 relative z-10">
-                  <span className="material-symbols-outlined text-[32px]">settings</span>
-                </div>
-                <h3 className="text-lg font-bold text-[#0d1f1c]">03<br/>Execution</h3>
-                <p className="text-sm text-gray-600 mt-2">Quality construction<br/>with regular updates</p>
-                <div className="hidden md:block absolute right-0 top-10 translate-x-1/2 -translate-y-1/2 text-[#fea12b] bg-[#f8f9fa] z-10">
-                   <span className="material-symbols-outlined text-[24px]">arrow_forward</span>
-                </div>
-              </div>
-
-              {/* Step 4 */}
-              <div className="flex flex-col items-center text-center">
-                <div className="w-20 h-20 rounded-full bg-white border-2 border-gray-200 shadow-md flex items-center justify-center text-[#0d1f1c] mb-4 relative z-10">
-                  <span className="material-symbols-outlined text-[32px]">verified_user</span>
-                </div>
-                <h3 className="text-lg font-bold text-[#0d1f1c]">04<br/>Handover</h3>
-                <p className="text-sm text-gray-600 mt-2">On-time delivery<br/>and support</p>
-              </div>
             </div>
           </div>
         </div>

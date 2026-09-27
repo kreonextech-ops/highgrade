@@ -354,7 +354,7 @@ export default function Home() {
         { num: "06", title: "3D Elevation\nDesign", desc: "Realistic exterior visualization to help you see your dream before construction.", icon: "view_in_ar", img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop", cols: "col-span-12 md:col-span-4", h: "min-h-[280px] lg:min-h-[320px]" },
         { num: "07", title: "Structural\nDesign", desc: "Safe RCC and steel structural solutions with precision.", icon: "foundation", img: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800&auto=format&fit=crop", cols: "col-span-12 md:col-span-3", h: "min-h-[280px] lg:min-h-[320px]" },
         { num: "08", title: "Interior\nDesign", desc: "Elegant and practical interiors that match your lifestyle.", icon: "chair", img: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=600&auto=format&fit=crop", cols: "col-span-12 md:col-span-3", h: "min-h-[280px] lg:min-h-[320px]" },
-        { num: "09", title: "Renovation &\nRemodeling", desc: "Upgrade and transform existing spaces beautifully and efficiently.", icon: "handyman", img: "https://images.unsplash.com/photo-1581141849291-1125c7b692b5?q=80&w=600&auto=format&fit=crop", cols: "col-span-12 md:col-span-3", h: "min-h-[280px] lg:min-h-[320px]" },
+        { num: "09", title: "Renovation &\nRemodeling", desc: "Upgrade and transform existing spaces beautifully and efficiently.", icon: "handyman", img: "/portfolio/renovation_WhatsApp_Image_2026-09-10_at_1.57.51_PM__1_.jpeg", cols: "col-span-12 md:col-span-3", h: "min-h-[280px] lg:min-h-[320px]" },
         { num: "10", title: "Project\nManagement", desc: "Quality control, timeline management and budget supervision.", icon: "assignment", img: "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?q=80&w=600&auto=format&fit=crop", cols: "col-span-12 md:col-span-3", h: "min-h-[280px] lg:min-h-[320px]" }
       ].map((srv, index) => {
          const isGreen = index % 2 === 0;
@@ -544,6 +544,75 @@ export default function Home() {
         </div>
       </section>
 
+
+{/* Our Team Section */}
+<section className="w-full py-20 lg:py-28 bg-surface text-on-surface" id="team">
+  <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 lg:mb-16 gap-6">
+      <div className="max-w-2xl">
+        <span className="font-label-caps text-label-caps uppercase text-secondary font-bold tracking-widest block mb-4">Our Core Team</span>
+        <h2 className="font-headline-xl text-[36px] md:text-[44px] text-primary font-bold mb-4">The Experts Behind Highgrade</h2>
+        <p className="font-body-md text-on-surface-variant">
+          Our strength lies in our people — a highly qualified and experienced team of chartered engineers, architects, and technical experts dedicated to building your vision with absolute precision.
+        </p>
+      </div>
+    </div>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-8">
+      {[
+        {
+          name: "Er. Darshan Diyali",
+          role: "B.Tech (Civil Engineering)",
+          desc: "Experience: 10+ Years",
+          img: "/team/darshan.jpeg"
+        },
+        {
+          name: "Er. Sushant Pradhan",
+          role: "B.Tech | M.Tech | Chartered Engineer",
+          desc: "Experience: 10+ Years",
+          img: "/team/sushant.jpeg"
+        },
+        {
+          name: "Er. Prasan Pradhan",
+          role: "B.Tech (Civil Engineering)",
+          desc: "Experience: 8+ Years",
+          img: null
+        },
+        {
+          name: "Ar. Shradharaj Gurung",
+          role: "Architect & Interior Designer",
+          desc: "Exp: 15+ Yrs (Energy Efficient Proj.)",
+          img: null
+        },
+        {
+          name: "Er. Prabesh Sharma",
+          role: "B.Tech | M.Tech | Chartered Engineer",
+          desc: "Experience: 10+ Years",
+          img: null
+        }
+      ].map((member, i) => (
+        <div key={i} className="flex flex-col group">
+          <div className="aspect-[4/5] rounded-2xl overflow-hidden mb-5 bg-surface-container flex items-center justify-center border border-outline-variant/30 relative shadow-sm group-hover:shadow-lg transition-all duration-300 group-hover:-translate-y-1">
+            {member.img ? (
+              <a href={member.img} target="_blank" className="block w-full h-full cursor-zoom-in relative z-20"><img src={member.img} alt={member.name}  className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105" /></a>
+            ) : (
+              <div className="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-[#0c2a25] to-[#1a4a42] text-white/50 p-4 text-center">
+                 <span className="material-symbols-outlined text-[48px] mb-3 opacity-40">engineering</span>
+                 <div className="font-headline-sm font-bold opacity-30 tracking-widest text-3xl">
+                   {member.name.replace('Er. ', '').replace('Ar. ', '').split(' ').map(n=>n[0]).join('')}
+                 </div>
+              </div>
+            )}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0a1514]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
+          <h3 className="font-headline-sm text-primary font-bold text-[18px] lg:text-[20px] leading-tight mb-1.5">{member.name}</h3>
+          <p className="font-body-sm text-on-surface-variant font-medium leading-snug mb-2 pr-2">{member.role}</p>
+          <p className="font-label-md text-[12px] text-secondary font-bold uppercase tracking-wide mt-auto">{member.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 <section className="w-full py-20 lg:py-28 bg-surface-container-low text-on-surface" id="portfolio">
 <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -566,7 +635,7 @@ Explore a selection of our ongoing and completed projects, showcasing our commit
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8">
   <div className="group project-card flex flex-col rounded-2xl overflow-hidden bg-surface-container-lowest border border-outline-variant/30 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300">
     <div className="relative aspect-[16/10] overflow-hidden">
-      <img alt="Naxalbari Project" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/portfolio/naxalbari_DSC09206.JPG.jpeg"/>
+      <a href="/portfolio/naxalbari_DSC09206.JPG.jpeg" target="_blank" className="block w-full h-full cursor-zoom-in relative z-20"><img alt="Naxalbari Project" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/portfolio/naxalbari_DSC09206.JPG.jpeg"/></a>
       <div className="absolute inset-0 bg-gradient-to-t from-[#0a1514]/85 via-transparent to-transparent"></div>
       <div className="absolute top-3.5 left-3.5 flex gap-2">
         <span className="px-2.5 py-1 rounded-md bg-[#0a1514]/80 backdrop-blur-md text-white font-label-caps text-[10px] uppercase tracking-wider">Naxalbari</span>
@@ -577,7 +646,7 @@ Explore a selection of our ongoing and completed projects, showcasing our commit
 
   <div className="group project-card flex flex-col rounded-2xl overflow-hidden bg-surface-container-lowest border border-outline-variant/30 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300">
     <div className="relative aspect-[16/10] overflow-hidden">
-      <img alt="Ranidanga Project" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/portfolio/ranidanga_WhatsApp_Image_2026-09-10_at_1.57.38_PM.jpeg"/>
+      <a href="/portfolio/ranidanga_WhatsApp_Image_2026-09-10_at_1.57.38_PM.jpeg" target="_blank" className="block w-full h-full cursor-zoom-in relative z-20"><img alt="Ranidanga Project" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/portfolio/ranidanga_WhatsApp_Image_2026-09-10_at_1.57.38_PM.jpeg"/></a>
       <div className="absolute inset-0 bg-gradient-to-t from-[#0a1514]/85 via-transparent to-transparent"></div>
       <div className="absolute top-3.5 left-3.5 flex gap-2">
         <span className="px-2.5 py-1 rounded-md bg-[#0a1514]/80 backdrop-blur-md text-white font-label-caps text-[10px] uppercase tracking-wider">Ranidanga</span>
@@ -588,7 +657,7 @@ Explore a selection of our ongoing and completed projects, showcasing our commit
 
   <div className="group project-card flex flex-col rounded-2xl overflow-hidden bg-surface-container-lowest border border-outline-variant/30 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300">
     <div className="relative aspect-[16/10] overflow-hidden">
-      <img alt="Completed Project" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/portfolio/residential_home_WhatsApp_Image_2026-09-10_at_1.57.47_PM.jpeg"/>
+      <a href="/portfolio/residential_home_WhatsApp_Image_2026-09-10_at_1.57.47_PM.jpeg" target="_blank" className="block w-full h-full cursor-zoom-in relative z-20"><img alt="Completed Project" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/portfolio/residential_home_WhatsApp_Image_2026-09-10_at_1.57.47_PM.jpeg"/></a>
       <div className="absolute inset-0 bg-gradient-to-t from-[#0a1514]/85 via-transparent to-transparent"></div>
       <div className="absolute top-3.5 left-3.5 flex gap-2">
         <span className="px-2.5 py-1 rounded-md bg-primary text-white font-label-caps text-[10px] uppercase tracking-wider font-bold">Completed</span>
@@ -598,7 +667,7 @@ Explore a selection of our ongoing and completed projects, showcasing our commit
 
   <div className="group project-card flex flex-col rounded-2xl overflow-hidden bg-surface-container-lowest border border-outline-variant/30 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300">
     <div className="relative aspect-[16/10] overflow-hidden">
-      <img alt="Renovation" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/portfolio/renovation_WhatsApp_Image_2026-09-10_at_1.57.51_PM__1_.jpeg"/>
+      <a href="/portfolio/renovation_WhatsApp_Image_2026-09-10_at_1.57.51_PM__1_.jpeg" target="_blank" className="block w-full h-full cursor-zoom-in relative z-20"><img alt="Renovation" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/portfolio/renovation_WhatsApp_Image_2026-09-10_at_1.57.51_PM__1_.jpeg"/></a>
       <div className="absolute inset-0 bg-gradient-to-t from-[#0a1514]/85 via-transparent to-transparent"></div>
       <div className="absolute top-3.5 left-3.5 flex gap-2">
         <span className="px-2.5 py-1 rounded-md bg-[#0a1514]/80 backdrop-blur-md text-white font-label-caps text-[10px] uppercase tracking-wider">Renovation</span>
@@ -910,7 +979,7 @@ Explore a selection of our ongoing and completed projects, showcasing our commit
 {/* Live Google Map Viewport */}
 <div className="relative w-full h-72 sm:h-80 lg:h-96 rounded-3xl overflow-hidden shadow-xl border border-outline-variant/30 bg-surface-variant group">
   <iframe 
-    src="https://maps.google.com/maps?q=High+Grade+Construction+Company,+Siliguri&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+    src="https://maps.google.com/maps?q=26.765125,88.3811867&t=&z=16&ie=UTF8&iwloc=&output=embed" 
     className="absolute inset-0 w-full h-full border-0 grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" 
     allowFullScreen 
     loading="lazy" 

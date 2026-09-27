@@ -1,4 +1,5 @@
 import React from 'react';
+import Gallery from '../../components/Gallery';
 
 export const metadata = {
   title: 'Our Portfolio - Highgrade Constructions',
@@ -21,18 +22,7 @@ export default function Portfolio() {
           </p>
         </div>
         
-        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
-          {images.map((src, idx) => (
-            <div key={idx} className="break-inside-avoid rounded-xl overflow-hidden bg-surface-container-low shadow-sm hover:shadow-md transition-shadow group">
-              <img 
-                src={src} 
-                alt={`Portfolio image ${idx + 1}`} 
-                className="w-full h-auto object-cover transform group-hover:scale-[1.02] transition-transform duration-500"
-                loading="lazy"
-              />
-            </div>
-          ))}
-        </div>
+        <Gallery images={images} />
       </div>
     </main>
   );

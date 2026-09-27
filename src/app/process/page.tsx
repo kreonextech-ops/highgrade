@@ -1,4 +1,5 @@
 "use client";
+import { motion } from 'framer-motion';
 
 import Link from "next/link";
 import Image from "next/image";
@@ -97,247 +98,103 @@ export default function Process() {
       </div>
 
       {/* Process Steps */}
-      <section className="w-full py-20 lg:py-28 bg-surface text-on-surface relative overflow-hidden">
-        <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
+<section className="relative w-full py-16 lg:py-24 bg-[#fdfcf8] text-[#0c2a25] overflow-hidden" id="process">
+        {/* Background Sketch (House & Sun) */}
+        <div className="absolute top-0 right-0 w-full lg:w-[60%] h-full mix-blend-multiply pointer-events-none z-0">
+          {/* Faint Sun */}
+          <div className="absolute top-[-50px] right-[20%] w-[400px] h-[400px] bg-[#fcecd4] rounded-full blur-[60px] opacity-80 z-0"></div>
           
-          <div className="flex flex-col lg:flex-row justify-between lg:items-end mb-16 gap-6">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#fdfcf8] via-[#fdfcf8]/80 to-transparent z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#fdfcf8] via-transparent to-transparent z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-[#fdfcf8] via-transparent to-transparent z-10"></div>
+          
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1920&auto=format&fit=crop" className="w-full h-full object-cover filter grayscale opacity-[0.15] relative z-0" alt="Background House Sketch" />
+        </div>
+
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          
+          {/* Header Area */}
+          <div className="flex flex-col lg:flex-row justify-between items-start gap-6 lg:gap-12 mb-16 lg:mb-24">
             <div className="max-w-2xl">
-              <span className="font-label-caps text-label-caps uppercase text-[#fea12b] font-bold tracking-widest block mb-2">Our Process</span>
-              <h2 className="font-headline-xl text-[36px] sm:text-[42px] lg:text-[48px] text-primary font-bold leading-tight">
-                A Clear Path to Exceptional Spaces
+              <div className="flex items-center gap-4 mb-3">
+                <span className="font-label-caps text-[11px] uppercase text-[#a06834] font-bold tracking-widest block">Our Process</span>
+                <div className="h-[1px] w-12 bg-[#a06834]/50"></div>
+              </div>
+              <h2 className="font-headline-xl text-[38px] sm:text-[46px] lg:text-[56px] font-bold leading-[1.05] mb-4">
+                From Concept to <span className="text-[#a06834]">Creation</span>
               </h2>
+              <p className="font-body-md text-[14px] lg:text-[15px] text-[#0c2a25]/70 leading-relaxed max-w-lg">
+                A clear, disciplined progression for a stronger tomorrow. We follow a structured process to ensure quality, transparency, and timely delivery in every project.
+              </p>
             </div>
-            <p className="font-body-md text-on-surface-variant max-w-md pb-2">
-              From the first conversation to the final handover, we follow a well-defined process that ensures quality, transparency and peace of mind at every stage.
-            </p>
+            {/* Right floating quote */}
+            <div className="hidden lg:flex items-start border-l-[3px] border-[#a06834] pl-5 mt-6 lg:mt-8">
+               <p className="italic font-serif text-[20px] lg:text-[22px] text-[#0c2a25]/80 max-w-[280px] leading-tight">
+                 A clear, disciplined progression for a stronger tomorrow.
+               </p>
+            </div>
           </div>
 
-          <div className="relative pl-6 sm:pl-10 lg:pl-[4.5rem]">
-            {/* Main Vertical Timeline Line */}
-            <div className="absolute top-2 bottom-0 left-[11px] sm:left-[23px] lg:left-[35px] w-0.5 bg-gradient-to-b from-outline-variant/60 via-outline-variant/30 to-transparent"></div>
+          {/* Timeline Container */}
+          <div className="relative w-full">
 
-            {/* Step 01 */}
-            <div className="relative flex flex-col md:flex-row items-center gap-8 lg:gap-16 mb-16 lg:mb-24">
-              <div className="absolute left-[-15px] sm:left-[-23px] lg:left-[-41px] top-4 sm:top-6 lg:top-8 w-4 h-4 rounded-full border-[3px] border-surface bg-[#fea12b] shadow-sm z-10"></div>
-              
-              <div className="w-full md:w-[45%] order-2 md:order-1 flex flex-col items-start pt-2">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-14 h-14 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center text-[#fea12b] shrink-0">
-                    <span className="material-symbols-outlined text-[28px]">handshake</span>
-                  </div>
-                  <span className="font-headline-xl text-5xl font-bold text-primary">01</span>
-                </div>
-                <h3 className="font-headline-md text-2xl font-bold text-on-surface mb-3">Consultation & Understanding</h3>
-                <p className="font-body-md text-on-surface-variant mb-5">
-                  We begin with a detailed discussion to understand your vision, requirements, budget and site conditions.
-                </p>
-                <ul className="flex flex-col gap-3 font-body-sm text-on-surface">
-                  <li className="flex items-start gap-2.5">
-                    <span className="material-symbols-outlined text-[#fea12b] text-[18px] mt-0.5">check_circle</span>
-                    <span>Initial meeting (online or on-site)</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <span className="material-symbols-outlined text-[#fea12b] text-[18px] mt-0.5">check_circle</span>
-                    <span>Understand goals and lifestyle needs</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <span className="material-symbols-outlined text-[#fea12b] text-[18px] mt-0.5">check_circle</span>
-                    <span>Site visit and feasibility study</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="w-full md:w-[55%] order-1 md:order-2">
-                <div className="relative rounded-2xl overflow-hidden shadow-lg border border-outline-variant/20 aspect-[16/10]">
-                  <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80" alt="Consultation" className="w-full h-full object-cover" />
-                </div>
-              </div>
-            </div>
+             {/* The 7 Steps Grid */}
+             <div className="grid grid-cols-1 lg:grid-cols-7 gap-y-12 gap-x-0 relative z-10">
+                
+                {[
+                  { num: "01", title: "Consultation &\nSite Visit", desc: "Understanding your vision, land conditions, and specific project requirements to set a solid foundation for the entire build.", color: "green", icon: "forum" },
+                  { num: "02", title: "Planning &\nEstimation", desc: "Rigorous budget planning, resource allocation, and technical feasibility analysis to ensure no hidden surprises.", color: "gold", icon: "article" },
+                  { num: "03", title: "Architectural\nDesign", desc: "Drafting highly detailed 2D layouts and producing premium 3D elevations for perfect visualization before execution.", color: "green", icon: "view_in_ar" },
+                  { num: "04", title: "Structural\nEngineering", desc: "Creating safe, heavily optimized structural drawings adhering strictly to the highest IS code standards.", color: "gold", icon: "settings" },
+                  { num: "05", title: "Construction\nExecution", desc: "Strict quality-controlled site execution with single-point management, expert supervision, and daily progress tracking.", color: "green", icon: "construction" },
+                  { num: "06", title: "Quality\nInspection", desc: "Executing multiple rigorous engineering checkpoints, material audits, and safety tests before final completion.", color: "gold", icon: "gpp_good" },
+                  { num: "07", title: "Project\nHandover", desc: "Delivering the keys to a stunning, meticulously crafted home built to last for generations, fully ready for move-in.", color: "green", icon: "home" }
+                ].map((step, index) => {
+                   const isGold = step.color === "gold";
+                   
+                   return (
+                     <div key={index} className="relative flex flex-row lg:flex-col items-start text-left group pr-0 lg:pr-4 gap-5 lg:gap-0">
+                        
+                        {/* Mobile Vertical Timeline Line */}
+                        {index < 6 && (
+                           <div className="absolute left-[28px] top-[56px] h-[calc(100%+48px)] w-[2px] bg-[#0c2a25]/10 lg:hidden z-0 block"></div>
+                        )}
 
-            {/* Step 02 */}
-            <div className="relative flex flex-col md:flex-row items-center gap-8 lg:gap-16 mb-16 lg:mb-24">
-              <div className="absolute left-[-15px] sm:left-[-23px] lg:left-[-41px] top-4 sm:top-6 lg:top-8 w-4 h-4 rounded-full border-[3px] border-surface bg-[#fea12b] shadow-sm z-10"></div>
-              
-              <div className="w-full md:w-[55%] order-1 md:order-1">
-                <div className="relative rounded-2xl overflow-hidden shadow-lg border border-outline-variant/20 aspect-[16/10]">
-                  <img src="https://images.unsplash.com/photo-1503708928676-1cb796a0891e?auto=format&fit=crop&w=1200&q=80" alt="Planning & Design" className="w-full h-full object-cover" />
-                </div>
-              </div>
-              <div className="w-full md:w-[45%] order-2 md:order-2 flex flex-col items-start pt-2 md:pl-4">
-                <div className="flex items-center gap-4 mb-4">
-                  <span className="font-headline-xl text-5xl font-bold text-primary">02</span>
-                  <div className="w-14 h-14 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center text-[#fea12b] shrink-0">
-                    <span className="material-symbols-outlined text-[28px]">architecture</span>
-                  </div>
-                </div>
-                <h3 className="font-headline-md text-2xl font-bold text-on-surface mb-3">Planning & Design</h3>
-                <p className="font-body-md text-on-surface-variant mb-5">
-                  Our team creates intelligent and functional designs tailored to your space, whether in the plains or hills.
-                </p>
-                <ul className="flex flex-col gap-3 font-body-sm text-on-surface">
-                  <li className="flex items-start gap-2.5">
-                    <span className="material-symbols-outlined text-[#fea12b] text-[18px] mt-0.5">check_circle</span>
-                    <span>Concept design and layout</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <span className="material-symbols-outlined text-[#fea12b] text-[18px] mt-0.5">check_circle</span>
-                    <span>3D visualization (if required)</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <span className="material-symbols-outlined text-[#fea12b] text-[18px] mt-0.5">check_circle</span>
-                    <span>Material suggestions and cost estimation</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
+                        {/* Desktop Horizontal Line segment */}
+                        {index < 6 && (
+                           <>
+                             <div className="hidden lg:block absolute top-[28px] left-[28px] w-full h-[2px] bg-[#0c2a25]/10 z-0"></div>
+                             {/* Connecting Dot */}
+                             <div className="hidden lg:block absolute top-[25px] right-[-4px] w-2 h-2 rounded-full bg-[#a06834]/40 z-10"></div>
+                           </>
+                        )}
 
-            {/* Step 03 */}
-            <div className="relative flex flex-col md:flex-row items-center gap-8 lg:gap-16 mb-16 lg:mb-24">
-              <div className="absolute left-[-15px] sm:left-[-23px] lg:left-[-41px] top-4 sm:top-6 lg:top-8 w-4 h-4 rounded-full border-[3px] border-surface bg-[#fea12b] shadow-sm z-10"></div>
-              
-              <div className="w-full md:w-[45%] order-2 md:order-1 flex flex-col items-start pt-2">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-14 h-14 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center text-[#fea12b] shrink-0">
-                    <span className="material-symbols-outlined text-[28px]">task</span>
-                  </div>
-                  <span className="font-headline-xl text-5xl font-bold text-primary">03</span>
-                </div>
-                <h3 className="font-headline-md text-2xl font-bold text-on-surface mb-3">Approvals & Documentation</h3>
-                <p className="font-body-md text-on-surface-variant mb-5">
-                  We assist with all necessary approvals and documentation to ensure a smooth and hassle-free process.
-                </p>
-                <ul className="flex flex-col gap-3 font-body-sm text-on-surface">
-                  <li className="flex items-start gap-2.5">
-                    <span className="material-symbols-outlined text-[#fea12b] text-[18px] mt-0.5">check_circle</span>
-                    <span>Drawing finalization</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <span className="material-symbols-outlined text-[#fea12b] text-[18px] mt-0.5">check_circle</span>
-                    <span>Authority approvals and NOCs</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <span className="material-symbols-outlined text-[#fea12b] text-[18px] mt-0.5">check_circle</span>
-                    <span>Detailed project planning & scheduling</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="w-full md:w-[55%] order-1 md:order-2">
-                <div className="relative rounded-2xl overflow-hidden shadow-lg border border-outline-variant/20 aspect-[16/10]">
-                  <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80" alt="Approvals & Documentation" className="w-full h-full object-cover" />
-                </div>
-              </div>
-            </div>
+                        {/* Huge Watermark Number */}
+                        <div className="absolute top-[0px] lg:-top-8 left-[60px] lg:left-4 text-[64px] lg:text-[84px] font-serif font-bold text-[#0c2a25] opacity-[0.04] leading-none z-0 pointer-events-none select-none transition-transform duration-500 group-hover:-translate-y-1">
+                           {step.num}
+                        </div>
 
-            {/* Step 04 */}
-            <div className="relative flex flex-col md:flex-row items-center gap-8 lg:gap-16 mb-16 lg:mb-24">
-              <div className="absolute left-[-15px] sm:left-[-23px] lg:left-[-41px] top-4 sm:top-6 lg:top-8 w-4 h-4 rounded-full border-[3px] border-surface bg-[#fea12b] shadow-sm z-10"></div>
-              
-              <div className="w-full md:w-[55%] order-1 md:order-1">
-                <div className="relative rounded-2xl overflow-hidden shadow-lg border border-outline-variant/20 aspect-[16/10]">
-                  <img src="https://images.unsplash.com/photo-1541888081622-6b9576eb5535?auto=format&fit=crop&w=1200&q=80" alt="Execution & Construction" className="w-full h-full object-cover" />
-                </div>
-              </div>
-              <div className="w-full md:w-[45%] order-2 md:order-2 flex flex-col items-start pt-2 md:pl-4">
-                <div className="flex items-center gap-4 mb-4">
-                  <span className="font-headline-xl text-5xl font-bold text-primary">04</span>
-                  <div className="w-14 h-14 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center text-[#fea12b] shrink-0">
-                    <span className="material-symbols-outlined text-[28px]">construction</span>
-                  </div>
-                </div>
-                <h3 className="font-headline-md text-2xl font-bold text-on-surface mb-3">Execution & Construction</h3>
-                <p className="font-body-md text-on-surface-variant mb-5">
-                  With a skilled team and strict quality control, we bring the design to life — on time and within budget.
-                </p>
-                <ul className="flex flex-col gap-3 font-body-sm text-on-surface">
-                  <li className="flex items-start gap-2.5">
-                    <span className="material-symbols-outlined text-[#fea12b] text-[18px] mt-0.5">check_circle</span>
-                    <span>Site preparation and mobilization</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <span className="material-symbols-outlined text-[#fea12b] text-[18px] mt-0.5">check_circle</span>
-                    <span>Quality construction with regular updates</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <span className="material-symbols-outlined text-[#fea12b] text-[18px] mt-0.5">check_circle</span>
-                    <span>Safety and environmental compliance</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
+                        {/* Icon Row (Shrink-0 for mobile) */}
+                        <div className="relative z-10 flex items-center shrink-0 mb-0 lg:mb-6">
+                           {/* Icon Circle */}
+                           <div className={`w-14 h-14 rounded-full flex items-center justify-center shrink-0 border-[6px] border-[#fdfcf8] ${isGold ? 'bg-[#fdf8f4] text-[#a06834]' : 'bg-[#e8f3f1] text-[#0c2a25]'}`}>
+                              <span className="material-symbols-outlined text-[24px]">{step.icon}</span>
+                           </div>
+                        </div>
 
-            {/* Step 05 */}
-            <div className="relative flex flex-col md:flex-row items-center gap-8 lg:gap-16 mb-16 lg:mb-24">
-              <div className="absolute left-[-15px] sm:left-[-23px] lg:left-[-41px] top-4 sm:top-6 lg:top-8 w-4 h-4 rounded-full border-[3px] border-surface bg-[#fea12b] shadow-sm z-10"></div>
-              
-              <div className="w-full md:w-[45%] order-2 md:order-1 flex flex-col items-start pt-2">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-14 h-14 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center text-[#fea12b] shrink-0">
-                    <span className="material-symbols-outlined text-[28px]">fact_check</span>
-                  </div>
-                  <span className="font-headline-xl text-5xl font-bold text-primary">05</span>
-                </div>
-                <h3 className="font-headline-md text-2xl font-bold text-on-surface mb-3">Quality Checks & Transparency</h3>
-                <p className="font-body-md text-on-surface-variant mb-5">
-                  We conduct regular inspections and share progress updates to ensure complete transparency.
-                </p>
-                <ul className="flex flex-col gap-3 font-body-sm text-on-surface">
-                  <li className="flex items-start gap-2.5">
-                    <span className="material-symbols-outlined text-[#fea12b] text-[18px] mt-0.5">check_circle</span>
-                    <span>On-site quality inspections</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <span className="material-symbols-outlined text-[#fea12b] text-[18px] mt-0.5">check_circle</span>
-                    <span>Progress reports with photos</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <span className="material-symbols-outlined text-[#fea12b] text-[18px] mt-0.5">check_circle</span>
-                    <span>Client walkthroughs at key stages</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="w-full md:w-[55%] order-1 md:order-2">
-                <div className="relative rounded-2xl overflow-hidden shadow-lg border border-outline-variant/20 aspect-[16/10]">
-                  <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1200&q=80" alt="Quality Checks" className="w-full h-full object-cover" />
-                </div>
-              </div>
-            </div>
-
-            {/* Step 06 */}
-            <div className="relative flex flex-col md:flex-row items-center gap-8 lg:gap-16">
-              <div className="absolute left-[-15px] sm:left-[-23px] lg:left-[-41px] top-4 sm:top-6 lg:top-8 w-4 h-4 rounded-full border-[3px] border-surface bg-[#fea12b] shadow-sm z-10"></div>
-              
-              <div className="w-full md:w-[55%] order-1 md:order-1">
-                <div className="relative rounded-2xl overflow-hidden shadow-lg border border-outline-variant/20 aspect-[16/10]">
-                  <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Handover" className="w-full h-full object-cover" />
-                </div>
-              </div>
-              <div className="w-full md:w-[45%] order-2 md:order-2 flex flex-col items-start pt-2 md:pl-4">
-                <div className="flex items-center gap-4 mb-4">
-                  <span className="font-headline-xl text-5xl font-bold text-primary">06</span>
-                  <div className="w-14 h-14 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center text-[#fea12b] shrink-0">
-                    <span className="material-symbols-outlined text-[28px]">key</span>
-                  </div>
-                </div>
-                <h3 className="font-headline-md text-2xl font-bold text-on-surface mb-3">Handover & After Support</h3>
-                <p className="font-body-md text-on-surface-variant mb-5">
-                  We complete the project with a detailed handover and continue to support you even after completion.
-                </p>
-                <ul className="flex flex-col gap-3 font-body-sm text-on-surface">
-                  <li className="flex items-start gap-2.5">
-                    <span className="material-symbols-outlined text-[#fea12b] text-[18px] mt-0.5">check_circle</span>
-                    <span>Final walkthrough and quality check</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <span className="material-symbols-outlined text-[#fea12b] text-[18px] mt-0.5">check_circle</span>
-                    <span>Handover of documentation</span>
-                  </li>
-                  <li className="flex items-start gap-2.5">
-                    <span className="material-symbols-outlined text-[#fea12b] text-[18px] mt-0.5">check_circle</span>
-                    <span>Post-completion support and maintenance guidance</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
+                        {/* Text Content */}
+                        <div className="relative z-10 flex flex-col pt-2 lg:pt-0 pb-6 lg:pb-0">
+                           <h3 className="font-bold text-[#0c2a25] text-[15.5px] lg:text-[16px] leading-tight mb-1 lg:mb-2 whitespace-pre-line">
+                              {step.title.replace('\n', '\n')}
+                           </h3>
+                           <p className="text-[12.5px] lg:text-[13px] text-[#0c2a25]/60 leading-snug pr-2 lg:pr-2">
+                              {step.desc}
+                           </p>
+                        </div>
+                     </div>
+                   );
+                })}
+             </div>
           </div>
         </div>
       </section>

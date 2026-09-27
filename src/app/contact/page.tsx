@@ -92,8 +92,8 @@ export default function Contact() {
             </div>
             <div>
               <div className="font-bold text-gray-900 mb-1 font-['Playfair_Display']">Email Us</div>
-              <div className="text-gray-600 text-sm">dayalconstruction.office@gmail.com</div>
-              <div className="text-gray-600 text-sm">info@highgradeconstructions.in</div>
+              <div className="text-gray-600 text-sm">highgradeconstruction3@gmail.com</div>
+              <div className="text-gray-600 text-sm">highgradeconstruction3@gmail.com</div>
             </div>
           </div>
           <div className="hidden md:block w-px bg-gray-100"></div>
@@ -194,48 +194,38 @@ export default function Contact() {
 
             {/* RIGHT COLUMN: MAP & OFFICE INFO */}
             <div className="flex flex-col gap-6">
+              
               {/* Map Card */}
-              <div className="bg-[#e7eed9] rounded-2xl shadow-sm border border-gray-100 h-[350px] relative overflow-hidden group">
-                <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Map" className="w-full h-full object-cover rounded-xl opacity-60 mix-blend-multiply" />
-                <div className="absolute top-4 left-4 bg-white p-3.5 rounded-xl shadow-lg flex flex-col gap-1 max-w-[260px] border border-gray-100">
-                  <div className="flex items-center gap-2 font-bold text-gray-900 text-sm">
-                    <div className="w-5 h-5 flex items-center justify-center bg-gray-100 rounded">
-                      <span className="material-symbols-outlined text-[#fea12b] text-[14px]">home</span>
-                    </div>
-                    Highgrade Constructions
-                  </div>
-                  <div className="text-[11px] text-gray-500 ml-7">Siliguri, West Bengal, India</div>
-                  <a href="#" className="text-[11px] font-bold text-gray-800 mt-1 ml-7 flex items-center gap-1 hover:text-[#fea12b] transition-colors">
-                    View on Google Maps
-                    <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
-                  </a>
-                </div>
-                {/* Custom Map Pin */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-                  <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center shadow-lg border-2 border-white relative z-10">
-                    <span className="material-symbols-outlined text-white text-[16px]">location_on</span>
-                  </div>
-                  <div className="font-bold text-gray-900 bg-white/80 backdrop-blur-sm px-2 py-0.5 rounded text-sm mt-1 shadow-sm">
-                    Siliguri
-                  </div>
-                </div>
+              <div className="bg-[#e7eed9] rounded-2xl shadow-sm border border-outline-variant/30 h-[350px] relative overflow-hidden group">
+                <iframe 
+                  src="https://maps.google.com/maps?q=26.765125,88.3811867&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }} 
+                  allowFullScreen={true} 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="absolute inset-0 grayscale-[20%] contrast-[1.1] hover:grayscale-0 transition-all duration-700"
+                ></iframe>
               </div>
 
               {/* Office Image & Info */}
-              <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col sm:flex-row h-auto sm:h-[280px]">
+              <div className="bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/30 overflow-hidden flex flex-col sm:flex-row h-auto sm:h-[280px]">
                 <div className="p-8 sm:p-10 flex-1 flex flex-col justify-center">
                   <div className="mb-4">
-                    <span className="material-symbols-outlined text-gray-400 text-[32px]">domain</span>
+                    <span className="material-symbols-outlined text-secondary text-[32px]">domain</span>
                   </div>
-                  <h3 className="font-['Playfair_Display'] text-2xl font-bold text-gray-900 mb-3">Our Office</h3>
+                  <h3 className="font-headline-sm text-2xl font-bold text-primary mb-3">Our Office</h3>
                   <div className="flex gap-2.5 mb-5 items-start">
-                    <span className="material-symbols-outlined text-gray-400 text-[18px] mt-0.5">location_on</span>
+                    <span className="material-symbols-outlined text-secondary text-[18px] mt-0.5">location_on</span>
                     <div>
-                      <div className="font-bold text-gray-900 text-[13px]">Siliguri, West Bengal, India</div>
-                      <div className="text-[11px] text-gray-500">(Near Bagdogra / Lokenath Nagar Area)</div>
+                      <div className="font-bold text-primary text-[13px]">Siliguri, West Bengal</div>
+                      <div className="text-[11px] text-on-surface-variant pr-4 leading-relaxed mt-1">
+                        Kaziman Pradhan Rd, near Union Bank Methibari, Salbari, Siliguri, Panchanai, West Bengal 734002
+                      </div>
                     </div>
                   </div>
-                  <p className="text-[13px] text-gray-600 leading-relaxed">
+                  <p className="text-[13px] text-on-surface-variant leading-relaxed">
                     We welcome you to our office for detailed discussions, project consultations and site views. Please call us in advance to schedule a meeting.
                   </p>
                 </div>
@@ -253,6 +243,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
+
 
       {/* FAQ SECTION */}
       <section className="w-full py-16 lg:py-24 bg-surface border-t border-gray-100">
