@@ -14,9 +14,8 @@ export default function Contact() {
       {/* HERO SECTION */}
       <section className="relative w-full pt-24 pb-20 lg:pt-32 lg:pb-32 overflow-hidden bg-[#0a1514] text-white">
         <div className="absolute inset-0 pointer-events-none z-0">
-          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')" }}></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/30"></div>
-        </div>
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/heroes/contact_hero.jpg')" }}></div>
+          </div>
         
         <div className="relative z-10 max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
@@ -198,7 +197,7 @@ export default function Contact() {
               {/* Map Card */}
               <div className="bg-[#e7eed9] rounded-2xl shadow-sm border border-outline-variant/30 h-[350px] relative overflow-hidden group">
                 <iframe 
-                  src="https://maps.google.com/maps?q=26.765125,88.3811867&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                  src="https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1sHigh+Grade+Construction+Company,+Kaziman+Pradhan+Rd,+Salbari,+Siliguri!6i16!3m1!1sen!5m1!1sen" 
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }} 

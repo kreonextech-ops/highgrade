@@ -11,9 +11,8 @@ export default function Process() {
       <section className="relative w-full flex flex-col justify-between overflow-hidden bg-[#0a1514] text-white pt-24 lg:pt-32 pb-16 lg:pb-24">
         {/* Cinematic Backdrop */}
         <div className="absolute inset-0 pointer-events-none z-0">
-          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')" }}></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/40"></div>
-        </div>
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/heroes/process_hero.jpg')" }}></div>
+          </div>
 
         {/* Ambient Lighting */}
         <div className="absolute top-20 left-1/4 -translate-x-1/2 w-[650px] h-[400px] bg-primary/25 blur-[140px] rounded-full pointer-events-none"></div>
@@ -75,7 +74,7 @@ export default function Process() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 items-center divide-x divide-white/10">
             <div className="flex flex-col gap-1 items-center text-center px-4">
               <span className="material-symbols-outlined text-[28px] text-[#fea12b] mb-1">domain</span>
-              <div className="font-headline-sm text-lg text-white font-bold">100+</div>
+              <div className="font-headline-sm text-lg text-white font-bold">25+</div>
               <div className="font-body-sm text-xs text-white/60">Projects Completed</div>
             </div>
             <div className="flex flex-col gap-1 items-center text-center px-4">
@@ -104,8 +103,6 @@ export default function Process() {
           {/* Faint Sun */}
           <div className="absolute top-[-50px] right-[20%] w-[400px] h-[400px] bg-[#fcecd4] rounded-full blur-[60px] opacity-80 z-0"></div>
           
-          <div className="absolute inset-0 bg-gradient-to-r from-[#fdfcf8] via-[#fdfcf8]/80 to-transparent z-10"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-[#fdfcf8] via-transparent to-transparent z-10"></div>
           <div className="absolute inset-0 bg-gradient-to-b from-[#fdfcf8] via-transparent to-transparent z-10"></div>
           
           <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1920&auto=format&fit=crop" className="w-full h-full object-cover filter grayscale opacity-[0.15] relative z-0" alt="Background House Sketch" />
@@ -203,8 +200,7 @@ export default function Process() {
       <section className="relative w-full py-20 lg:py-24 overflow-hidden text-white">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1544198365-f5d60b6d8190?auto=format&fit=crop&w=1920&q=80')" }}></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1514]/90 via-[#0a1514]/70 to-[#0a1514]/60"></div>
-        </div>
+          </div>
 
         <div className="relative z-10 max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-16 gap-8">

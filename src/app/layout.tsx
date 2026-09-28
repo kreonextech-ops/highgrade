@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import SmoothScrolling from "../components/SmoothScrolling";
 
 export const metadata: Metadata = {
-  title: "High Grade Construction Company | Siliguri & Darjeeling Luxury Architectural Studio",
+  title: "HighGrade Constructions | Siliguri & Darjeeling Luxury Architectural Studio",
   description: "Bespoke residential, commercial & turnkey structural engineering",
 };
 

@@ -6,9 +6,8 @@ export default function About() {
       {/* Hero Section */}
       <section className="relative w-full min-h-[80vh] flex flex-col justify-center overflow-hidden bg-[#0a1514] text-white pt-24 lg:pt-32 pb-20">
         <div className="absolute inset-0 pointer-events-none z-0">
-          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')" }}></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
-        </div>
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/heroes/about_hero.jpg')" }}></div>
+          </div>
         
         <div className="relative z-10 max-w-[1360px] w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl">
@@ -41,7 +40,7 @@ export default function About() {
                 <span className="material-symbols-outlined text-secondary-fixed text-[24px]">apartment</span>
               </div>
               <div>
-                <div className="font-headline-md text-headline-md font-bold leading-tight">100+</div>
+                <div className="font-headline-md text-headline-md font-bold leading-tight">25+</div>
                 <div className="font-body-sm text-[12px] text-white/60">Projects Completed</div>
               </div>
             </div>
@@ -50,7 +49,7 @@ export default function About() {
                 <span className="material-symbols-outlined text-secondary-fixed text-[24px]">groups</span>
               </div>
               <div>
-                <div className="font-headline-md text-headline-md font-bold leading-tight">10+</div>
+                <div className="font-headline-md text-headline-md font-bold leading-tight">5</div>
                 <div className="font-body-sm text-[12px] text-white/60">Team Members</div>
               </div>
             </div>
@@ -89,7 +88,7 @@ export default function About() {
                 Highgrade Constructions was founded in 2018 with a simple yet powerful vision — to create spaces that add value to people's lives. What began as a small team with big dreams has grown into a trusted construction partner for residential, commercial, industrial and turnkey projects across plains and hills.
               </p>
               <p className="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
-                Over the years, we have completed 100+ projects, building not just structures, but long-term relationships. Every project we undertake is a reflection of our commitment to quality, transparency and timely execution.
+                Over the years, we have completed 25+ projects, building not just structures, but long-term relationships. Every project we undertake is a reflection of our commitment to quality, transparency and timely execution.
               </p>
               <div className="mt-4">
                 <div className="font-display-hero text-[32px] text-primary italic leading-none" style={{ fontFamily: "'Dancing Script', cursive" }}>From Foundations</div>
@@ -99,7 +98,7 @@ export default function About() {
             </div>
             <div className="lg:col-span-4 relative">
               <div className="aspect-[3/4] rounded-2xl overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Highgrade Constructions Building" className="w-full h-full object-cover" />
+                <img src="/portfolio/naxalbari_DSC09206.JPG.jpeg" alt="Highgrade Constructions Building" className="w-full h-full object-cover" />
               </div>
             </div>
             <div className="lg:col-span-3 flex flex-col justify-center gap-10 lg:pl-8 border-l border-outline-variant/30">
@@ -108,11 +107,11 @@ export default function About() {
                 <p className="font-body-sm text-on-surface-variant">Year Founded</p>
               </div>
               <div>
-                <h3 className="font-headline-lg text-[32px] text-primary font-bold leading-tight mb-1">100+</h3>
+                <h3 className="font-headline-lg text-[32px] text-primary font-bold leading-tight mb-1">25+</h3>
                 <p className="font-body-sm text-on-surface-variant">Projects Completed</p>
               </div>
               <div>
-                <h3 className="font-headline-lg text-[32px] text-primary font-bold leading-tight mb-1">10+</h3>
+                <h3 className="font-headline-lg text-[32px] text-primary font-bold leading-tight mb-1">5</h3>
                 <p className="font-body-sm text-on-surface-variant">Team Members</p>
               </div>
               <div>

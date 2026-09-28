@@ -12,7 +12,7 @@ export default function Home() {
 </div>
 {/* Hero Content Vessel */}
 <div className="relative z-10 max-w-[1360px] w-full mx-auto px-4 sm:px-6 lg:px-8 flex-1 flex flex-col justify-between pt-8 lg:pt-16 pb-6 lg:pb-10">
-<div className="max-w-3xl flex flex-col items-start">
+<div className="max-w-3xl flex flex-col items-start drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]">
 {/* Category Tag Pill */}
 <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-black/40 border border-white/20 backdrop-blur-md mb-6 shadow-lg">
 <span className="w-2 h-2 rounded-full bg-[#fea12b] animate-pulse"></span>
@@ -346,7 +346,7 @@ export default function Home() {
     <div className="grid grid-cols-1 md:grid-cols-12 gap-5">
        
       {[
-        { num: "01", title: "Turnkey\nConstruction", desc: "Complete end-to-end residential and commercial construction solutions.", icon: "home", img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800&auto=format&fit=crop", cols: "col-span-12 md:col-span-5", h: "min-h-[280px] lg:min-h-[320px]" },
+        { num: "01", title: "Turnkey\nConstruction", desc: "Complete end-to-end residential and commercial construction solutions.", icon: "home", img: "/portfolio/residential_home_WhatsApp_Image_2026-09-10_at_1.57.48_PM.jpeg", cols: "col-span-12 md:col-span-5", h: "min-h-[280px] lg:min-h-[320px]" },
         { num: "02", title: "Residential\nHomes", desc: "Modern villas, independent houses and family homes built for lasting generations.", icon: "cottage", img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop", cols: "col-span-12 md:col-span-4", h: "min-h-[280px] lg:min-h-[320px]" },
         { num: "03", title: "Hill\nArchitecture", desc: "Engineered for slopes and mountain terrain with specialized techniques.", icon: "landscape", img: "https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=800&auto=format&fit=crop", cols: "col-span-12 md:col-span-3", h: "min-h-[280px] lg:min-h-[320px]" },
         { num: "04", title: "Architectural\nPlanning", desc: "Functional, aesthetic and site-specific space planning.", icon: "architecture", img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop", cols: "col-span-12 md:col-span-4", h: "min-h-[280px] lg:min-h-[320px]" },
@@ -603,8 +603,7 @@ export default function Home() {
                  </div>
               </div>
             )}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0a1514]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          </div>
+            </div>
           <h3 className="font-headline-sm text-primary font-bold text-[18px] lg:text-[20px] leading-tight mb-1.5">{member.name}</h3>
           <p className="font-body-sm text-on-surface-variant font-medium leading-snug mb-2 pr-2">{member.role}</p>
           <p className="font-label-md text-[12px] text-secondary font-bold uppercase tracking-wide mt-auto">{member.desc}</p>
@@ -636,7 +635,6 @@ Explore a selection of our ongoing and completed projects, showcasing our commit
   <div className="group project-card flex flex-col rounded-2xl overflow-hidden bg-surface-container-lowest border border-outline-variant/30 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300">
     <div className="relative aspect-[16/10] overflow-hidden">
       <a href="/portfolio/naxalbari_DSC09206.JPG.jpeg" target="_blank" className="block w-full h-full cursor-zoom-in relative z-20"><img alt="Naxalbari Project" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/portfolio/naxalbari_DSC09206.JPG.jpeg"/></a>
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0a1514]/85 via-transparent to-transparent"></div>
       <div className="absolute top-3.5 left-3.5 flex gap-2">
         <span className="px-2.5 py-1 rounded-md bg-[#0a1514]/80 backdrop-blur-md text-white font-label-caps text-[10px] uppercase tracking-wider">Naxalbari</span>
         <span className="px-2.5 py-1 rounded-md bg-[#fea12b] text-[#0a1514] font-label-caps text-[10px] uppercase tracking-wider font-bold">Ongoing</span>
@@ -647,7 +645,6 @@ Explore a selection of our ongoing and completed projects, showcasing our commit
   <div className="group project-card flex flex-col rounded-2xl overflow-hidden bg-surface-container-lowest border border-outline-variant/30 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300">
     <div className="relative aspect-[16/10] overflow-hidden">
       <a href="/portfolio/ranidanga_WhatsApp_Image_2026-09-10_at_1.57.38_PM.jpeg" target="_blank" className="block w-full h-full cursor-zoom-in relative z-20"><img alt="Ranidanga Project" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/portfolio/ranidanga_WhatsApp_Image_2026-09-10_at_1.57.38_PM.jpeg"/></a>
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0a1514]/85 via-transparent to-transparent"></div>
       <div className="absolute top-3.5 left-3.5 flex gap-2">
         <span className="px-2.5 py-1 rounded-md bg-[#0a1514]/80 backdrop-blur-md text-white font-label-caps text-[10px] uppercase tracking-wider">Ranidanga</span>
         <span className="px-2.5 py-1 rounded-md bg-[#fea12b] text-[#0a1514] font-label-caps text-[10px] uppercase tracking-wider font-bold">Ongoing</span>
@@ -658,7 +655,6 @@ Explore a selection of our ongoing and completed projects, showcasing our commit
   <div className="group project-card flex flex-col rounded-2xl overflow-hidden bg-surface-container-lowest border border-outline-variant/30 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300">
     <div className="relative aspect-[16/10] overflow-hidden">
       <a href="/portfolio/residential_home_WhatsApp_Image_2026-09-10_at_1.57.47_PM.jpeg" target="_blank" className="block w-full h-full cursor-zoom-in relative z-20"><img alt="Completed Project" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/portfolio/residential_home_WhatsApp_Image_2026-09-10_at_1.57.47_PM.jpeg"/></a>
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0a1514]/85 via-transparent to-transparent"></div>
       <div className="absolute top-3.5 left-3.5 flex gap-2">
         <span className="px-2.5 py-1 rounded-md bg-primary text-white font-label-caps text-[10px] uppercase tracking-wider font-bold">Completed</span>
       </div>
@@ -668,7 +664,6 @@ Explore a selection of our ongoing and completed projects, showcasing our commit
   <div className="group project-card flex flex-col rounded-2xl overflow-hidden bg-surface-container-lowest border border-outline-variant/30 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300">
     <div className="relative aspect-[16/10] overflow-hidden">
       <a href="/portfolio/renovation_WhatsApp_Image_2026-09-10_at_1.57.51_PM__1_.jpeg" target="_blank" className="block w-full h-full cursor-zoom-in relative z-20"><img alt="Renovation" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/portfolio/renovation_WhatsApp_Image_2026-09-10_at_1.57.51_PM__1_.jpeg"/></a>
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0a1514]/85 via-transparent to-transparent"></div>
       <div className="absolute top-3.5 left-3.5 flex gap-2">
         <span className="px-2.5 py-1 rounded-md bg-[#0a1514]/80 backdrop-blur-md text-white font-label-caps text-[10px] uppercase tracking-wider">Renovation</span>
       </div>
@@ -691,8 +686,6 @@ Explore a selection of our ongoing and completed projects, showcasing our commit
           {/* Faint Sun */}
           <div className="absolute top-[-50px] right-[20%] w-[400px] h-[400px] bg-[#fcecd4] rounded-full blur-[60px] opacity-80 z-0"></div>
           
-          <div className="absolute inset-0 bg-gradient-to-r from-[#fdfcf8] via-[#fdfcf8]/80 to-transparent z-10"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-[#fdfcf8] via-transparent to-transparent z-10"></div>
           <div className="absolute inset-0 bg-gradient-to-b from-[#fdfcf8] via-transparent to-transparent z-10"></div>
           
           <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1920&auto=format&fit=crop" className="w-full h-full object-cover filter grayscale opacity-[0.15] relative z-0" alt="Background House Sketch" />
@@ -845,7 +838,7 @@ Explore a selection of our ongoing and completed projects, showcasing our commit
 <span className="material-symbols-outlined text-[380px]">foundation</span>
 </div>
 <div className="relative z-10 max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
-<div className="max-w-3xl flex flex-col items-start">
+<div className="max-w-3xl flex flex-col items-start drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]">
 <span className="font-label-caps text-label-caps uppercase tracking-widest text-on-secondary-container font-bold mb-2">Start Your Build</span>
 <h2 className="font-headline-xl text-headline-xl font-bold leading-tight mb-4 text-[#3d2300]">
               Let’s Build Your Dream Together.
@@ -979,7 +972,7 @@ Explore a selection of our ongoing and completed projects, showcasing our commit
 {/* Live Google Map Viewport */}
 <div className="relative w-full h-72 sm:h-80 lg:h-96 rounded-3xl overflow-hidden shadow-xl border border-outline-variant/30 bg-surface-variant group">
   <iframe 
-    src="https://maps.google.com/maps?q=26.765125,88.3811867&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+    src="https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1sHigh+Grade+Construction+Company,+Kaziman+Pradhan+Rd,+Salbari,+Siliguri!6i16!3m1!1sen!5m1!1sen" 
     className="absolute inset-0 w-full h-full border-0 grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" 
     allowFullScreen 
     loading="lazy" 

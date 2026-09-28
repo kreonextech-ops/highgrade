@@ -13,14 +13,13 @@ export default function Services() {
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage:
-                "url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')",
+                "url('/heroes/services_hero.jpg')",
             }}
           ></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0d1f1c]/90 via-[#0d1f1c]/70 to-transparent"></div>
-        </div>
+          </div>
 
         <div className="relative z-10 max-w-[1360px] w-full mx-auto px-4 sm:px-6 lg:px-8 flex-1 flex flex-col justify-center">
-          <div className="max-w-2xl flex flex-col items-start">
+          <div className="max-w-3xl flex flex-col items-start drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]">
             {/* Breadcrumb */}
             <div className="flex items-center gap-2 text-sm text-white/60 mb-8 bg-white/10 px-4 py-2 rounded-md backdrop-blur-sm border border-white/10 w-fit">
               <span className="material-symbols-outlined text-[16px]">home</span>
@@ -81,7 +80,7 @@ export default function Services() {
                 <span className="material-symbols-outlined text-[24px]">person</span>
               </div>
               <div>
-                <div className="text-2xl font-bold text-white leading-tight">10+</div>
+                <div className="text-2xl font-bold text-white leading-tight">8+</div>
                 <div className="text-sm text-white/60">Years of Experience</div>
               </div>
             </div>
@@ -90,7 +89,7 @@ export default function Services() {
                 <span className="material-symbols-outlined text-[24px]">groups</span>
               </div>
               <div>
-                <div className="text-2xl font-bold text-white leading-tight">250+</div>
+                <div className="text-2xl font-bold text-white leading-tight">50+</div>
                 <div className="text-sm text-white/60">Happy Clients</div>
               </div>
             </div>
@@ -136,7 +135,7 @@ export default function Services() {
         Complete Construction <br className="hidden sm:block"/><span className="text-[#a06834]">Solutions Under One Roof</span>
       </h2>
       <p className="text-[15px] lg:text-[16px] text-on-surface-variant max-w-3xl leading-relaxed mb-10">
-        From concept to completion, High Grade delivers end-to-end construction solutions with engineering expertise, modern design, and uncompromising quality.
+        From concept to completion, HighGrade delivers end-to-end construction solutions with engineering expertise, modern design, and uncompromising quality.
       </p>
 
       {/* 4 Trust Badges */}
@@ -179,7 +178,7 @@ export default function Services() {
     <div className="grid grid-cols-1 md:grid-cols-12 gap-5">
        
       {[
-        { num: "01", title: "Turnkey\nConstruction", desc: "Complete end-to-end residential and commercial construction solutions.", icon: "home", img: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800&auto=format&fit=crop", cols: "col-span-12 md:col-span-5", h: "min-h-[280px] lg:min-h-[320px]" },
+        { num: "01", title: "Turnkey\nConstruction", desc: "Complete end-to-end residential and commercial construction solutions.", icon: "home", img: "/portfolio/ranidanga_WhatsApp_Image_2026-09-10_at_1.57.42_PM__1_.jpeg", cols: "col-span-12 md:col-span-5", h: "min-h-[280px] lg:min-h-[320px]" },
         { num: "02", title: "Residential\nHomes", desc: "Modern villas, independent houses and family homes built for lasting generations.", icon: "cottage", img: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop", cols: "col-span-12 md:col-span-4", h: "min-h-[280px] lg:min-h-[320px]" },
         { num: "03", title: "Hill\nArchitecture", desc: "Engineered for slopes and mountain terrain with specialized techniques.", icon: "landscape", img: "https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=800&auto=format&fit=crop", cols: "col-span-12 md:col-span-3", h: "min-h-[280px] lg:min-h-[320px]" },
         { num: "04", title: "Architectural\nPlanning", desc: "Functional, aesthetic and site-specific space planning.", icon: "architecture", img: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop", cols: "col-span-12 md:col-span-4", h: "min-h-[280px] lg:min-h-[320px]" },

@@ -33,16 +33,14 @@ export default function Navbar() {
 <div className="h-20 px-4 sm:px-6 lg:px-8 bg-[#0b1a18]/85 backdrop-blur-xl border border-white/10 rounded-2xl shadow-[0_16px_36px_rgba(0,0,0,0.35)] flex items-center justify-between gap-4 transition-all duration-300">
 {/* Brand Presentation */}
 <Link className="flex items-center gap-3 shrink-0 group" href="/">
-<div className="relative p-1 rounded-xl bg-white/5 border border-white/10 group-hover:border-secondary-container/40 transition-colors">
-<img alt="High Grade Construction Company" className="h-9 sm:h-10 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8l44GiShbzVfUDPwsBM-nSq1hRJhSFT8Kouo3og-88Yh6iG5EoU5rqN5_cjkrS-MNb1EYABwMGYNqPyBQ-rhyyJ5hVKP1ZwNbkxQvmu5nskjpGxNEPFHUyAtC1drS6vTkczqVE2g-sBGI24jZK0_tA8zaPuFQBpM2oy9P3dPDaruC-Cb2_dEK3UoiJU2Yf171lMdpQWRccrqEZJiZfEMoZzyfiEGeKzcvEo25XmztAmbIIghC46IbI6PxOo6D3W9LGA"/>
-</div>
+<div className="relative rounded-xl transition-colors"><img alt="HighGrade Constructions" className="h-10 sm:h-12 w-auto object-contain" src="/logohgc.png"/></div>
 <div className="flex flex-col">
 <span className="font-headline-sm text-[19px] sm:text-[21px] font-bold tracking-tight text-white leading-none flex items-center gap-1.5">
-              High Grade
+              HighGrade
               <span className="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
 </span>
 <span className="font-label-caps text-[10px] uppercase tracking-[0.18em] text-outline-variant mt-1">
-              Construction Co.
+              Constructions
             </span>
 </div>
 {/* Territory Badge */}

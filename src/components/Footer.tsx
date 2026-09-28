@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="flex flex-col items-start">
             <Link href="/" className="flex items-center gap-3 mb-6 group">
               <div className="relative p-1 rounded-xl bg-white/5 border border-white/10 transition-colors">
-                <img alt="High Grade Construction Company" className="h-10 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8l44GiShbzVfUDPwsBM-nSq1hRJhSFT8Kouo3og-88Yh6iG5EoU5rqN5_cjkrS-MNb1EYABwMGYNqPyBQ-rhyyJ5hVKP1ZwNbkxQvmu5nskjpGxNEPFHUyAtC1drS6vTkczqVE2g-sBGI24jZK0_tA8zaPuFQBpM2oy9P3dPDaruC-Cb2_dEK3UoiJU2Yf171lMdpQWRccrqEZJiZfEMoZzyfiEGeKzcvEo25XmztAmbIIghC46IbI6PxOo6D3W9LGA" />
+                <img alt="HighGrade Constructions" className="h-10 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8l44GiShbzVfUDPwsBM-nSq1hRJhSFT8Kouo3og-88Yh6iG5EoU5rqN5_cjkrS-MNb1EYABwMGYNqPyBQ-rhyyJ5hVKP1ZwNbkxQvmu5nskjpGxNEPFHUyAtC1drS6vTkczqVE2g-sBGI24jZK0_tA8zaPuFQBpM2oy9P3dPDaruC-Cb2_dEK3UoiJU2Yf171lMdpQWRccrqEZJiZfEMoZzyfiEGeKzcvEo25XmztAmbIIghC46IbI6PxOo6D3W9LGA" />
               </div>
               <div className="flex flex-col">
                 <span className="font-headline-sm text-[21px] font-bold tracking-tight text-white leading-none">High Grade</span>
@@ -47,7 +47,7 @@ export default function Footer() {
             <div className="flex flex-col gap-4 text-sm text-white/60">
               <div className="flex items-start gap-3">
                 <span className="material-symbols-outlined text-[#fea12b] text-[20px]">location_on</span>
-                <span>Pradhan Nagar, Siliguri<br/>West Bengal, 734003</span>
+                <span>Kaziman Pradhan Rd, near Union Bank Methibari, Salbari, Siliguri<br/>West Bengal, 734002</span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-[#fea12b] text-[20px]">call</span>
@@ -66,7 +66,7 @@ export default function Footer() {
         </div>
         
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/40">
-          <p>&copy; {new Date().getFullYear()} High Grade Construction Company. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} HighGrade Constructions. All rights reserved.</p>
           <div className="flex gap-4">
             <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
