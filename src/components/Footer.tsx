@@ -67,7 +67,7 @@ export default function Footer() {
         
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/40">
           <p>&copy; {new Date().getFullYear()} HighGrade Constructions. All rights reserved.</p>
-            <p className="text-xs text-white/40">Made with ♥ by <a href="https://www.kreonex.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline underline-offset-2">Kreonex Media</a></p>
+            <p className="text-xs text-white/40">Designed &amp; Built by <a href="https://www.kreonex.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline underline-offset-2">Kreonex Media</a></p>
           <div className="flex gap-4">
             <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
