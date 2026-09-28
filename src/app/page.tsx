@@ -879,7 +879,7 @@ Explore a selection of our ongoing and completed projects, showcasing our commit
 </div>
 <div className="flex flex-col gap-1.5">
 <label className="font-label-md text-label-md font-semibold text-on-surface">Phone Number *</label>
-<input className="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant/30 text-on-surface placeholder:text-outline text-body-sm focus:outline-none focus:border-primary shadow-sm" placeholder="+91 98765 43210" required type="tel"/>
+<input className="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant/30 text-on-surface placeholder:text-outline text-body-sm focus:outline-none focus:border-primary shadow-sm" placeholder="+91 70764 23578" required type="tel"/>
 </div>
 </div>
 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

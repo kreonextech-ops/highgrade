@@ -36,8 +36,8 @@ export default function Contact() {
           </p>
           
           <h3 className="text-2xl font-serif mb-6 text-hg-copper">Direct Lines</h3>
-          <p className="mb-2 opacity-80">+91 98765 43210</p>
-          <p className="mb-8 opacity-80">+91 98765 43211</p>
+          <p className="mb-2 opacity-80">+91 70764 23578</p>
+          <p className="mb-8 opacity-80">+91 89721 64804</p>
           
           <h3 className="text-2xl font-serif mb-6 text-hg-copper">Email</h3>
           <p className="opacity-80">build@highgradeconstructions.com</p>

@@ -2,12 +2,81 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-
+import JsonLd from "../components/JsonLd";
 import SmoothScrolling from "../components/SmoothScrolling";
 
+
+const BASE_URL = "https://highgrade-one.vercel.app";
+
 export const metadata: Metadata = {
-  title: "HighGrade Constructions | Siliguri & Darjeeling Luxury Architectural Studio",
-  description: "Bespoke residential, commercial & turnkey structural engineering",
+  metadataBase: new URL(BASE_URL),
+  title: {
+    default: "HighGrade Constructions | Siliguri & Darjeeling",
+    template: "%s | HighGrade Constructions",
+  },
+  description:
+    "HighGrade Constructions — premium residential, commercial & turnkey construction company serving Siliguri, Darjeeling and North Bengal since 2018. 25+ projects delivered.",
+  keywords: [
+    "construction company Siliguri",
+    "construction company Darjeeling",
+    "residential construction North Bengal",
+    "commercial construction Siliguri",
+    "turnkey construction Siliguri",
+    "hill architecture Darjeeling",
+    "architectural design Siliguri",
+    "interior design Siliguri",
+    "HighGrade Constructions",
+    "3D elevation design Siliguri",
+    "structural design North Bengal",
+    "renovation Siliguri",
+  ],
+  authors: [{ name: "HighGrade Constructions", url: BASE_URL }],
+  creator: "HighGrade Constructions",
+  publisher: "HighGrade Constructions",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: BASE_URL,
+    siteName: "HighGrade Constructions",
+    title: "HighGrade Constructions | Siliguri & Darjeeling",
+    description:
+      "Premium residential, commercial & turnkey construction company serving Siliguri, Darjeeling and North Bengal since 2018.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "HighGrade Constructions — Building Spaces, Creating Trust",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HighGrade Constructions | Siliguri & Darjeeling",
+    description:
+      "Premium residential, commercial & turnkey construction company serving Siliguri, Darjeeling and North Bengal since 2018.",
+    images: ["/og-image.jpg"],
+  },
+  alternates: {
+    canonical: BASE_URL,
+  },
+  icons: {
+    icon: "/logohgc.png",
+    shortcut: "/logohgc.png",
+    apple: "/logohgc.png",
+  },
+  category: "construction",
 };
 
 export default function RootLayout({
@@ -29,6 +98,8 @@ export default function RootLayout({
           {children}
           <Footer />
         </SmoothScrolling>
+        <JsonLd page="home" />
+
         {/* Floating WhatsApp CTA */}
         <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3 group">
           <div className="bg-white px-4 py-2 rounded-2xl shadow-lg border border-outline-variant/30 text-body-sm font-semibold text-on-surface opacity-0 translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 pointer-events-none hidden sm:block">

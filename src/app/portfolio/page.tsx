@@ -1,10 +1,28 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Gallery from '../../components/Gallery';
 
-export const metadata = {
-  title: 'Our Portfolio - Highgrade Constructions',
-  description: 'View our gallery of ongoing and completed construction and renovation projects.',
+export const metadata: Metadata = {
+  title: "Portfolio & Gallery",
+  description:
+    "Browse 50+ construction projects by HighGrade Constructions — residential homes, commercial complexes, renovations and hill architecture across Siliguri and Darjeeling.",
+  keywords: [
+    "construction portfolio Siliguri",
+    "construction gallery North Bengal",
+    "residential project photos Siliguri",
+    "HighGrade Constructions projects",
+    "renovation gallery Siliguri",
+  ],
+  openGraph: {
+    title: "Portfolio & Gallery | HighGrade Constructions",
+    description: "Browse 50+ construction projects across Siliguri and Darjeeling.",
+    url: "https://highgrade-one.vercel.app/portfolio",
+  },
+  alternates: {
+    canonical: "https://highgrade-one.vercel.app/portfolio",
+  },
 };
+
 
 export default function Portfolio() {
   const images = ["/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.38_PM.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.41_PM.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.42_PM__1_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.42_PM__2_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.42_PM.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.43_PM__1_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.43_PM__2_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.43_PM.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.44_PM__1_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.44_PM.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.45_PM__1_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.45_PM.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.46_PM__1_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.46_PM.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.48_PM__1_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.49_PM__1_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.49_PM.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.50_PM__1_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.50_PM__2_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.50_PM.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.51_PM.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.52_PM__1_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.52_PM.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.53_PM__1_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.53_PM__2_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.53_PM.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.54_PM__1_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.54_PM__2_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.54_PM.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.55_PM__1_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.55_PM.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.56_PM__1_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.56_PM__2_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.56_PM.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.57_PM__1_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.57_PM__2_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.57_PM.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.58_PM__1_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.58_PM.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.59_PM__1_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.59_PM__2_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.57.59_PM.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.58.00_PM__1_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.58.00_PM__2_.jpeg","/portfolio/gallery_WhatsApp_Image_2026-09-10_at_1.58.00_PM.jpeg","/portfolio/naxalbari_DSC09206.JPG.jpeg","/portfolio/naxalbari_DSC09207.JPG.jpeg","/portfolio/ranidanga_WhatsApp_Image_2026-09-10_at_1.57.38_PM.jpeg","/portfolio/ranidanga_WhatsApp_Image_2026-09-10_at_1.57.42_PM__1_.jpeg","/portfolio/ranidanga_WhatsApp_Image_2026-09-10_at_1.57.42_PM__2_.jpeg","/portfolio/ranidanga_WhatsApp_Image_2026-09-10_at_1.57.42_PM.jpeg","/portfolio/renovation_WhatsApp_Image_2026-09-10_at_1.57.51_PM__1_.jpeg","/portfolio/renovation_WhatsApp_Image_2026-09-10_at_1.57.51_PM__2_.jpeg","/portfolio/residential_home_WhatsApp_Image_2026-09-10_at_1.57.46_PM__2_.jpeg","/portfolio/residential_home_WhatsApp_Image_2026-09-10_at_1.57.47_PM__1_.jpeg","/portfolio/residential_home_WhatsApp_Image_2026-09-10_at_1.57.47_PM.jpeg","/portfolio/residential_home_WhatsApp_Image_2026-09-10_at_1.57.48_PM.jpeg"];

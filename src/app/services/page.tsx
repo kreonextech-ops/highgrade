@@ -320,7 +320,7 @@ export default function Services() {
               <div className="flex items-center gap-2 text-white">
                 <span className="text-sm text-white/60">Or Call Us</span>
                 <span className="material-symbols-outlined text-[20px]">call</span>
-                <span className="font-bold">+91 98765 43210</span>
+                <span className="font-bold">+91 70764 23578</span>
               </div>
             </div>
           </div>

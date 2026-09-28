@@ -1,4 +1,27 @@
 import React from 'react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Learn about HighGrade Constructions — established in 2018, serving Siliguri, Darjeeling and North Bengal with premium residential, commercial and turnkey construction services.",
+  keywords: [
+    "about HighGrade Constructions",
+    "construction company Siliguri history",
+    "North Bengal construction team",
+    "HighGrade team",
+  ],
+  openGraph: {
+    title: "About HighGrade Constructions",
+    description:
+      "Established in 2018, serving North Bengal with premium construction since day one.",
+    url: "https://highgrade-one.vercel.app/about",
+  },
+  alternates: {
+    canonical: "https://highgrade-one.vercel.app/about",
+  },
+};
+
 
 export default function About() {
   return (

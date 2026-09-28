@@ -89,7 +89,7 @@ export default function Navbar() {
 </div>
 </div>
 {/* Shimmer High-End Studio CTA */}
-<Link className="relative overflow-hidden shimmer-badge inline-flex items-center gap-2 bg-[#F59A23] hover:bg-[#ffaa3b] text-on-secondary-fixed font-label-md text-label-md px-4 sm:px-5 py-2.5 rounded-xl font-bold transition-all duration-300 shadow-[0_6px_22px_rgba(245,154,35,0.4)] group" href="/contact">
+<Link className="relative overflow-hidden shimmer-badge hidden sm:inline-flex items-center gap-2 bg-[#F59A23] hover:bg-[#ffaa3b] text-on-secondary-fixed font-label-md text-label-md px-4 sm:px-5 py-2.5 rounded-xl font-bold transition-all duration-300 shadow-[0_6px_22px_rgba(245,154,35,0.4)] group" href="/contact">
 <span className="whitespace-nowrap">Consult an Expert</span>
 <span className="material-symbols-outlined text-[18px] transition-transform duration-300 group-hover:translate-x-1">east</span>
 </Link>

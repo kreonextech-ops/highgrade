@@ -80,7 +80,7 @@ export default function Contact() {
             </div>
             <div>
               <div className="font-bold text-gray-900 mb-1 font-['Playfair_Display']">Call Us</div>
-              <div className="text-gray-600 text-sm">+91 98765 43210</div>
+              <div className="text-gray-600 text-sm">+91 70764 23578</div>
               <div className="text-gray-600 text-sm">+91 91234 56789</div>
             </div>
           </div>
